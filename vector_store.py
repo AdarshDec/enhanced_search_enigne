@@ -30,21 +30,28 @@ class VectorStore:
     even if they don't share exact keywords.
     """
     
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2", persist_dir: str = "."):
         """
         Initialize vector store
         
         Args:
             model_name: Name of sentence transformer model to use
-                       "all-MiniLM-L6-v2" is fast and lightweight
-                       Other options: "all-mpnet-base-v2" (more accurate but slower)
+            persist_dir: Directory to save/load vector store data
         """
         self.model_name = model_name
+        self.persist_dir = persist_dir
+        self.store_file = f"{persist_dir}/vector_store.pkl"
+        
         self.model = None
         self.documents: Dict[int, VectorDocument] = {}
         self.embeddings_matrix: Optional[np.ndarray] = None
         self.doc_ids: List[int] = []
+        
         self._initialize_model()
+        
+        # Try to load existing data
+        if self.is_available():
+            self.load()
     
     def _initialize_model(self):
         """Load sentence transformer model"""
@@ -60,6 +67,44 @@ class VectorStore:
         except Exception as e:
             print(f"⚠ Warning: Could not load model: {e}")
             print("  Falling back to keyword-only search.")
+    
+    def save(self):
+        """Save vector store to disk"""
+        if not self.documents:
+            return
+            
+        try:
+            # We save the documents dict which contains embeddings
+            data = {
+                "documents": self.documents,
+                "model_name": self.model_name
+            }
+            
+            with open(self.store_file, 'wb') as f:
+                pickle.dump(data, f)
+            print(f"✓ Saved vector store to {self.store_file}")
+        except Exception as e:
+            print(f"⚠ Error saving vector store: {e}")
+            
+    def load(self):
+        """Load vector store from disk"""
+        if not os.path.exists(self.store_file):
+            return
+            
+        try:
+            with open(self.store_file, 'rb') as f:
+                data = pickle.load(f)
+            
+            # Verify model match
+            if data.get("model_name") != self.model_name:
+                print(f"⚠ Warning: Vector store model ({data.get('model_name')}) differs from current ({self.model_name}). Ignoring saved data.")
+                return
+                
+            self.documents = data["documents"]
+            self._rebuild_matrix()
+            print(f"✓ Loaded {len(self.documents)} vectors from {self.store_file}")
+        except Exception as e:
+            print(f"⚠ Error loading vector store: {e}")
     
     def is_available(self) -> bool:
         """Check if vector search is available"""
@@ -118,6 +163,9 @@ class VectorStore:
         # Rebuild embeddings matrix
         self._rebuild_matrix()
         
+        # SAVE STATE
+        self.save()
+        
         return True
     
     def _rebuild_matrix(self):
@@ -137,6 +185,7 @@ class VectorStore:
         if doc_id in self.documents:
             del self.documents[doc_id]
             self._rebuild_matrix()
+            self.save()
     
     def search(
         self,

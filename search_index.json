@@ -1,0 +1,4034 @@
+{
+  "documents": {
+    "1": {
+      "id": 1,
+      "title": "Introduction to Python Programming",
+      "content": "\n        Python is a high-level, interpreted programming language known for its simplicity and readability.\n        It was created by Guido van Rossum and first released in 1991. Python supports multiple programming\n        paradigms including procedural, object-oriented, and functional programming. It has a large standard\n        library and an active community that contributes thousands of third-party packages.\n        "
+    },
+    "2": {
+      "id": 2,
+      "title": "Building Web Applications with FastAPI",
+      "content": "\n        FastAPI is a modern, fast web framework for building APIs with Python. It's built on top of Starlette\n        and Pydantic, providing automatic API documentation, type validation, and async support. FastAPI is\n        one of the fastest Python frameworks available, comparable to Node.js and Go. It's perfect for\n        building REST APIs, microservices, and modern web applications.\n        "
+    },
+    "3": {
+      "id": 3,
+      "title": "Understanding Search Engines and Information Retrieval",
+      "content": "\n        Search engines use sophisticated algorithms to find and rank relevant documents. The core concepts\n        include inverted indexes, which map words to documents, and ranking algorithms like TF-IDF and BM25.\n        TF-IDF (Term Frequency-Inverse Document Frequency) measures how important a word is to a document\n        in a collection. Modern search engines also use machine learning and vector embeddings for semantic\n        search capabilities.\n        "
+    },
+    "4": {
+      "id": 4,
+      "title": "Database Design and SQL Fundamentals",
+      "content": "\n        Databases are essential for storing and retrieving data in applications. SQL (Structured Query Language)\n        is the standard language for interacting with relational databases. Key concepts include tables, rows,\n        columns, primary keys, foreign keys, and relationships. Understanding normalization, indexing, and\n        query optimization is crucial for building efficient database systems.\n        "
+    },
+    "5": {
+      "id": 5,
+      "title": "Machine Learning Basics",
+      "content": "\n        Machine learning is a subset of artificial intelligence that enables computers to learn from data\n        without being explicitly programmed. Common types include supervised learning (classification,\n        regression), unsupervised learning (clustering), and reinforcement learning. Popular algorithms\n        include linear regression, decision trees, neural networks, and support vector machines. Python\n        libraries like scikit-learn, TensorFlow, and PyTorch make it easy to implement ML models.\n        "
+    },
+    "6": {
+      "id": 6,
+      "title": "RESTful API Design Principles",
+      "content": "\n        REST (Representational State Transfer) is an architectural style for designing web services. RESTful\n        APIs use HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs.\n        Key principles include statelessness, uniform interface, and resource-based URLs. Good API design\n        includes proper status codes, error handling, versioning, and documentation. APIs should be intuitive,\n        consistent, and follow industry best practices.\n        "
+    },
+    "7": {
+      "id": 7,
+      "title": "Version Control with Git",
+      "content": "\n        Git is a distributed version control system used by millions of developers worldwide. It allows\n        tracking changes in code, collaborating with teams, and managing different versions of projects.\n        Key concepts include repositories, commits, branches, merges, and remotes. Platforms like GitHub\n        and GitLab provide hosting and collaboration features. Understanding Git is essential for modern\n        software development workflows.\n        "
+    },
+    "8": {
+      "id": 8,
+      "title": "Docker and Containerization",
+      "content": "\n        Docker is a platform for developing, shipping, and running applications in containers. Containers\n        package applications with their dependencies, ensuring consistency across different environments.\n        Docker uses images and containers, with Dockerfile for defining image builds. Containerization\n        simplifies deployment, improves scalability, and enables microservices architecture. Docker Compose\n        allows managing multi-container applications easily.\n        "
+    },
+    "9": {
+      "id": 9,
+      "title": "JavaScript and Modern Web Development",
+      "content": "\n        JavaScript is the programming language of the web, running in browsers and on servers via Node.js.\n        Modern JavaScript includes ES6+ features like arrow functions, promises, async/await, and modules.\n        Popular frameworks include React, Vue, and Angular for building interactive user interfaces.\n        Understanding JavaScript fundamentals, DOM manipulation, and asynchronous programming is crucial\n        for web development.\n        "
+    },
+    "10": {
+      "id": 10,
+      "title": "Cloud Computing and AWS Services",
+      "content": "\n        Cloud computing provides on-demand computing resources over the internet. Amazon Web Services (AWS)\n        offers a wide range of services including EC2 for virtual servers, S3 for storage, RDS for databases,\n        and Lambda for serverless computing. Understanding cloud architecture, scalability, and cost\n        optimization is important for modern application deployment. Other major cloud providers include\n        Google Cloud Platform and Microsoft Azure.\n        "
+    },
+    "11": {
+      "id": 11,
+      "title": "Riverdale",
+      "content": "jughead jones and betty are a couple"
+    }
+  },
+  "inverted_index": {
+    "python": [
+      [
+        1,
+        [
+          0,
+          26
+        ]
+      ],
+      [
+        2,
+        [
+          11,
+          36
+        ]
+      ],
+      [
+        5,
+        [
+          45
+        ]
+      ]
+    ],
+    "is": [
+      [
+        1,
+        [
+          1
+        ]
+      ],
+      [
+        2,
+        [
+          1,
+          31
+        ]
+      ],
+      [
+        3,
+        [
+          42
+        ]
+      ],
+      [
+        4,
+        [
+          14,
+          41
+        ]
+      ],
+      [
+        5,
+        [
+          2
+        ]
+      ],
+      [
+        6,
+        [
+          4
+        ]
+      ],
+      [
+        7,
+        [
+          1,
+          49
+        ]
+      ],
+      [
+        8,
+        [
+          1
+        ]
+      ],
+      [
+        9,
+        [
+          1,
+          50
+        ]
+      ],
+      [
+        10,
+        [
+          43
+        ]
+      ]
+    ],
+    "a": [
+      [
+        1,
+        [
+          2,
+          40
+        ]
+      ],
+      [
+        2,
+        [
+          2
+        ]
+      ],
+      [
+        3,
+        [
+          40,
+          44,
+          47
+        ]
+      ],
+      [
+        5,
+        [
+          3
+        ]
+      ],
+      [
+        7,
+        [
+          2
+        ]
+      ],
+      [
+        8,
+        [
+          2
+        ]
+      ],
+      [
+        10,
+        [
+          15
+        ]
+      ],
+      [
+        11,
+        [
+          5
+        ]
+      ]
+    ],
+    "high": [
+      [
+        1,
+        [
+          3
+        ]
+      ]
+    ],
+    "level": [
+      [
+        1,
+        [
+          4
+        ]
+      ]
+    ],
+    "interpreted": [
+      [
+        1,
+        [
+          5
+        ]
+      ]
+    ],
+    "programming": [
+      [
+        1,
+        [
+          6,
+          29,
+          37
+        ]
+      ],
+      [
+        9,
+        [
+          3,
+          49
+        ]
+      ]
+    ],
+    "language": [
+      [
+        1,
+        [
+          7
+        ]
+      ],
+      [
+        4,
+        [
+          13,
+          17
+        ]
+      ],
+      [
+        9,
+        [
+          4
+        ]
+      ]
+    ],
+    "known": [
+      [
+        1,
+        [
+          8
+        ]
+      ]
+    ],
+    "for": [
+      [
+        1,
+        [
+          9
+        ]
+      ],
+      [
+        2,
+        [
+          7,
+          48
+        ]
+      ],
+      [
+        3,
+        [
+          59
+        ]
+      ],
+      [
+        4,
+        [
+          3,
+          18,
+          43
+        ]
+      ],
+      [
+        6,
+        [
+          8
+        ]
+      ],
+      [
+        7,
+        [
+          51
+        ]
+      ],
+      [
+        8,
+        [
+          4,
+          30
+        ]
+      ],
+      [
+        9,
+        [
+          37,
+          52
+        ]
+      ],
+      [
+        10,
+        [
+          22,
+          26,
+          29,
+          33,
+          45
+        ]
+      ]
+    ],
+    "its": [
+      [
+        1,
+        [
+          10
+        ]
+      ]
+    ],
+    "simplicity": [
+      [
+        1,
+        [
+          11
+        ]
+      ]
+    ],
+    "and": [
+      [
+        1,
+        [
+          12,
+          21,
+          35,
+          44
+        ]
+      ],
+      [
+        2,
+        [
+          19,
+          27,
+          43,
+          53
+        ]
+      ],
+      [
+        3,
+        [
+          7,
+          22,
+          28,
+          56
+        ]
+      ],
+      [
+        4,
+        [
+          5,
+          33,
+          38
+        ]
+      ],
+      [
+        5,
+        [
+          29,
+          41,
+          51
+        ]
+      ],
+      [
+        6,
+        [
+          35,
+          49,
+          56
+        ]
+      ],
+      [
+        7,
+        [
+          22,
+          35,
+          40,
+          44
+        ]
+      ],
+      [
+        8,
+        [
+          7,
+          26,
+          39
+        ]
+      ],
+      [
+        9,
+        [
+          11,
+          28,
+          35,
+          47
+        ]
+      ],
+      [
+        10,
+        [
+          31,
+          40,
+          57
+        ]
+      ],
+      [
+        11,
+        [
+          2
+        ]
+      ]
+    ],
+    "readability": [
+      [
+        1,
+        [
+          13
+        ]
+      ]
+    ],
+    "it": [
+      [
+        1,
+        [
+          14,
+          38
+        ]
+      ],
+      [
+        2,
+        [
+          12,
+          45
+        ]
+      ],
+      [
+        5,
+        [
+          54
+        ]
+      ],
+      [
+        7,
+        [
+          13
+        ]
+      ]
+    ],
+    "was": [
+      [
+        1,
+        [
+          15
+        ]
+      ]
+    ],
+    "created": [
+      [
+        1,
+        [
+          16
+        ]
+      ]
+    ],
+    "by": [
+      [
+        1,
+        [
+          17
+        ]
+      ],
+      [
+        6,
+        [
+          27
+        ]
+      ],
+      [
+        7,
+        [
+          8
+        ]
+      ]
+    ],
+    "guido": [
+      [
+        1,
+        [
+          18
+        ]
+      ]
+    ],
+    "van": [
+      [
+        1,
+        [
+          19
+        ]
+      ]
+    ],
+    "rossum": [
+      [
+        1,
+        [
+          20
+        ]
+      ]
+    ],
+    "first": [
+      [
+        1,
+        [
+          22
+        ]
+      ]
+    ],
+    "released": [
+      [
+        1,
+        [
+          23
+        ]
+      ]
+    ],
+    "in": [
+      [
+        1,
+        [
+          24
+        ]
+      ],
+      [
+        3,
+        [
+          46
+        ]
+      ],
+      [
+        4,
+        [
+          8
+        ]
+      ],
+      [
+        7,
+        [
+          17
+        ]
+      ],
+      [
+        8,
+        [
+          10
+        ]
+      ],
+      [
+        9,
+        [
+          9
+        ]
+      ]
+    ],
+    "1991": [
+      [
+        1,
+        [
+          25
+        ]
+      ]
+    ],
+    "supports": [
+      [
+        1,
+        [
+          27
+        ]
+      ]
+    ],
+    "multiple": [
+      [
+        1,
+        [
+          28
+        ]
+      ]
+    ],
+    "paradigms": [
+      [
+        1,
+        [
+          30
+        ]
+      ]
+    ],
+    "including": [
+      [
+        1,
+        [
+          31
+        ]
+      ],
+      [
+        10,
+        [
+          20
+        ]
+      ]
+    ],
+    "procedural": [
+      [
+        1,
+        [
+          32
+        ]
+      ]
+    ],
+    "object": [
+      [
+        1,
+        [
+          33
+        ]
+      ]
+    ],
+    "oriented": [
+      [
+        1,
+        [
+          34
+        ]
+      ]
+    ],
+    "functional": [
+      [
+        1,
+        [
+          36
+        ]
+      ]
+    ],
+    "has": [
+      [
+        1,
+        [
+          39
+        ]
+      ]
+    ],
+    "large": [
+      [
+        1,
+        [
+          41
+        ]
+      ]
+    ],
+    "standard": [
+      [
+        1,
+        [
+          42
+        ]
+      ],
+      [
+        4,
+        [
+          16
+        ]
+      ]
+    ],
+    "library": [
+      [
+        1,
+        [
+          43
+        ]
+      ]
+    ],
+    "an": [
+      [
+        1,
+        [
+          45
+        ]
+      ],
+      [
+        6,
+        [
+          5
+        ]
+      ]
+    ],
+    "active": [
+      [
+        1,
+        [
+          46
+        ]
+      ]
+    ],
+    "community": [
+      [
+        1,
+        [
+          47
+        ]
+      ]
+    ],
+    "that": [
+      [
+        1,
+        [
+          48
+        ]
+      ],
+      [
+        5,
+        [
+          8
+        ]
+      ]
+    ],
+    "contributes": [
+      [
+        1,
+        [
+          49
+        ]
+      ]
+    ],
+    "thousands": [
+      [
+        1,
+        [
+          50
+        ]
+      ]
+    ],
+    "of": [
+      [
+        1,
+        [
+          51
+        ]
+      ],
+      [
+        2,
+        [
+          17,
+          33
+        ]
+      ],
+      [
+        5,
+        [
+          5
+        ]
+      ],
+      [
+        7,
+        [
+          10,
+          26
+        ]
+      ],
+      [
+        9,
+        [
+          5
+        ]
+      ],
+      [
+        10,
+        [
+          18
+        ]
+      ]
+    ],
+    "third": [
+      [
+        1,
+        [
+          52
+        ]
+      ]
+    ],
+    "party": [
+      [
+        1,
+        [
+          53
+        ]
+      ]
+    ],
+    "packages": [
+      [
+        1,
+        [
+          54
+        ]
+      ]
+    ],
+    "fastapi": [
+      [
+        2,
+        [
+          0,
+          30
+        ]
+      ]
+    ],
+    "modern": [
+      [
+        2,
+        [
+          3,
+          54
+        ]
+      ],
+      [
+        3,
+        [
+          49
+        ]
+      ],
+      [
+        7,
+        [
+          52
+        ]
+      ],
+      [
+        9,
+        [
+          17
+        ]
+      ],
+      [
+        10,
+        [
+          46
+        ]
+      ]
+    ],
+    "fast": [
+      [
+        2,
+        [
+          4
+        ]
+      ]
+    ],
+    "web": [
+      [
+        2,
+        [
+          5,
+          55
+        ]
+      ],
+      [
+        6,
+        [
+          10
+        ]
+      ],
+      [
+        9,
+        [
+          7,
+          53
+        ]
+      ],
+      [
+        10,
+        [
+          11
+        ]
+      ]
+    ],
+    "framework": [
+      [
+        2,
+        [
+          6
+        ]
+      ]
+    ],
+    "building": [
+      [
+        2,
+        [
+          8,
+          49
+        ]
+      ],
+      [
+        4,
+        [
+          44
+        ]
+      ],
+      [
+        9,
+        [
+          38
+        ]
+      ]
+    ],
+    "apis": [
+      [
+        2,
+        [
+          9,
+          51
+        ]
+      ],
+      [
+        6,
+        [
+          13,
+          51
+        ]
+      ]
+    ],
+    "with": [
+      [
+        2,
+        [
+          10
+        ]
+      ],
+      [
+        4,
+        [
+          20
+        ]
+      ],
+      [
+        7,
+        [
+          20
+        ]
+      ],
+      [
+        8,
+        [
+          15,
+          28
+        ]
+      ]
+    ],
+    "s": [
+      [
+        2,
+        [
+          13,
+          46
+        ]
+      ]
+    ],
+    "built": [
+      [
+        2,
+        [
+          14
+        ]
+      ]
+    ],
+    "on": [
+      [
+        2,
+        [
+          15
+        ]
+      ],
+      [
+        6,
+        [
+          24
+        ]
+      ],
+      [
+        9,
+        [
+          12
+        ]
+      ],
+      [
+        10,
+        [
+          3
+        ]
+      ]
+    ],
+    "top": [
+      [
+        2,
+        [
+          16
+        ]
+      ]
+    ],
+    "starlette": [
+      [
+        2,
+        [
+          18
+        ]
+      ]
+    ],
+    "pydantic": [
+      [
+        2,
+        [
+          20
+        ]
+      ]
+    ],
+    "providing": [
+      [
+        2,
+        [
+          21
+        ]
+      ]
+    ],
+    "automatic": [
+      [
+        2,
+        [
+          22
+        ]
+      ]
+    ],
+    "api": [
+      [
+        2,
+        [
+          23
+        ]
+      ],
+      [
+        6,
+        [
+          40
+        ]
+      ]
+    ],
+    "documentation": [
+      [
+        2,
+        [
+          24
+        ]
+      ],
+      [
+        6,
+        [
+          50
+        ]
+      ]
+    ],
+    "type": [
+      [
+        2,
+        [
+          25
+        ]
+      ]
+    ],
+    "validation": [
+      [
+        2,
+        [
+          26
+        ]
+      ]
+    ],
+    "async": [
+      [
+        2,
+        [
+          28
+        ]
+      ],
+      [
+        9,
+        [
+          26
+        ]
+      ]
+    ],
+    "support": [
+      [
+        2,
+        [
+          29
+        ]
+      ],
+      [
+        5,
+        [
+          42
+        ]
+      ]
+    ],
+    "one": [
+      [
+        2,
+        [
+          32
+        ]
+      ]
+    ],
+    "the": [
+      [
+        2,
+        [
+          34
+        ]
+      ],
+      [
+        3,
+        [
+          11
+        ]
+      ],
+      [
+        4,
+        [
+          15
+        ]
+      ],
+      [
+        9,
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        10,
+        [
+          8
+        ]
+      ]
+    ],
+    "fastest": [
+      [
+        2,
+        [
+          35
+        ]
+      ]
+    ],
+    "frameworks": [
+      [
+        2,
+        [
+          37
+        ]
+      ],
+      [
+        9,
+        [
+          31
+        ]
+      ]
+    ],
+    "available": [
+      [
+        2,
+        [
+          38
+        ]
+      ]
+    ],
+    "comparable": [
+      [
+        2,
+        [
+          39
+        ]
+      ]
+    ],
+    "to": [
+      [
+        2,
+        [
+          40
+        ]
+      ],
+      [
+        3,
+        [
+          5,
+          20,
+          43
+        ]
+      ],
+      [
+        5,
+        [
+          11,
+          56
+        ]
+      ],
+      [
+        6,
+        [
+          21
+        ]
+      ]
+    ],
+    "node": [
+      [
+        2,
+        [
+          41
+        ]
+      ],
+      [
+        9,
+        [
+          15
+        ]
+      ]
+    ],
+    "js": [
+      [
+        2,
+        [
+          42
+        ]
+      ],
+      [
+        9,
+        [
+          16
+        ]
+      ]
+    ],
+    "go": [
+      [
+        2,
+        [
+          44
+        ]
+      ]
+    ],
+    "perfect": [
+      [
+        2,
+        [
+          47
+        ]
+      ]
+    ],
+    "rest": [
+      [
+        2,
+        [
+          50
+        ]
+      ],
+      [
+        6,
+        [
+          0
+        ]
+      ]
+    ],
+    "microservices": [
+      [
+        2,
+        [
+          52
+        ]
+      ],
+      [
+        8,
+        [
+          41
+        ]
+      ]
+    ],
+    "applications": [
+      [
+        2,
+        [
+          56
+        ]
+      ],
+      [
+        4,
+        [
+          9
+        ]
+      ],
+      [
+        8,
+        [
+          9,
+          14,
+          49
+        ]
+      ]
+    ],
+    "search": [
+      [
+        3,
+        [
+          0,
+          50,
+          61
+        ]
+      ]
+    ],
+    "engines": [
+      [
+        3,
+        [
+          1,
+          51
+        ]
+      ]
+    ],
+    "use": [
+      [
+        3,
+        [
+          2,
+          53
+        ]
+      ],
+      [
+        6,
+        [
+          14
+        ]
+      ]
+    ],
+    "sophisticated": [
+      [
+        3,
+        [
+          3
+        ]
+      ]
+    ],
+    "algorithms": [
+      [
+        3,
+        [
+          4,
+          24
+        ]
+      ],
+      [
+        5,
+        [
+          33
+        ]
+      ]
+    ],
+    "find": [
+      [
+        3,
+        [
+          6
+        ]
+      ]
+    ],
+    "rank": [
+      [
+        3,
+        [
+          8
+        ]
+      ]
+    ],
+    "relevant": [
+      [
+        3,
+        [
+          9
+        ]
+      ]
+    ],
+    "documents": [
+      [
+        3,
+        [
+          10,
+          21
+        ]
+      ]
+    ],
+    "core": [
+      [
+        3,
+        [
+          12
+        ]
+      ]
+    ],
+    "concepts": [
+      [
+        3,
+        [
+          13
+        ]
+      ],
+      [
+        4,
+        [
+          24
+        ]
+      ],
+      [
+        7,
+        [
+          29
+        ]
+      ]
+    ],
+    "include": [
+      [
+        3,
+        [
+          14
+        ]
+      ],
+      [
+        4,
+        [
+          25
+        ]
+      ],
+      [
+        5,
+        [
+          21,
+          34
+        ]
+      ],
+      [
+        6,
+        [
+          31
+        ]
+      ],
+      [
+        7,
+        [
+          30
+        ]
+      ],
+      [
+        9,
+        [
+          32
+        ]
+      ],
+      [
+        10,
+        [
+          53
+        ]
+      ]
+    ],
+    "inverted": [
+      [
+        3,
+        [
+          15
+        ]
+      ]
+    ],
+    "indexes": [
+      [
+        3,
+        [
+          16
+        ]
+      ]
+    ],
+    "which": [
+      [
+        3,
+        [
+          17
+        ]
+      ]
+    ],
+    "map": [
+      [
+        3,
+        [
+          18
+        ]
+      ]
+    ],
+    "words": [
+      [
+        3,
+        [
+          19
+        ]
+      ]
+    ],
+    "ranking": [
+      [
+        3,
+        [
+          23
+        ]
+      ]
+    ],
+    "like": [
+      [
+        3,
+        [
+          25
+        ]
+      ],
+      [
+        5,
+        [
+          47
+        ]
+      ],
+      [
+        7,
+        [
+          38
+        ]
+      ],
+      [
+        9,
+        [
+          22
+        ]
+      ]
+    ],
+    "tf": [
+      [
+        3,
+        [
+          26,
+          30
+        ]
+      ]
+    ],
+    "idf": [
+      [
+        3,
+        [
+          27,
+          31
+        ]
+      ]
+    ],
+    "bm25": [
+      [
+        3,
+        [
+          29
+        ]
+      ]
+    ],
+    "term": [
+      [
+        3,
+        [
+          32
+        ]
+      ]
+    ],
+    "frequency": [
+      [
+        3,
+        [
+          33,
+          36
+        ]
+      ]
+    ],
+    "inverse": [
+      [
+        3,
+        [
+          34
+        ]
+      ]
+    ],
+    "document": [
+      [
+        3,
+        [
+          35,
+          45
+        ]
+      ]
+    ],
+    "measures": [
+      [
+        3,
+        [
+          37
+        ]
+      ]
+    ],
+    "how": [
+      [
+        3,
+        [
+          38
+        ]
+      ]
+    ],
+    "important": [
+      [
+        3,
+        [
+          39
+        ]
+      ],
+      [
+        10,
+        [
+          44
+        ]
+      ]
+    ],
+    "word": [
+      [
+        3,
+        [
+          41
+        ]
+      ]
+    ],
+    "collection": [
+      [
+        3,
+        [
+          48
+        ]
+      ]
+    ],
+    "also": [
+      [
+        3,
+        [
+          52
+        ]
+      ]
+    ],
+    "machine": [
+      [
+        3,
+        [
+          54
+        ]
+      ],
+      [
+        5,
+        [
+          0
+        ]
+      ]
+    ],
+    "learning": [
+      [
+        3,
+        [
+          55
+        ]
+      ],
+      [
+        5,
+        [
+          1,
+          23,
+          27,
+          31
+        ]
+      ]
+    ],
+    "vector": [
+      [
+        3,
+        [
+          57
+        ]
+      ],
+      [
+        5,
+        [
+          43
+        ]
+      ]
+    ],
+    "embeddings": [
+      [
+        3,
+        [
+          58
+        ]
+      ]
+    ],
+    "semantic": [
+      [
+        3,
+        [
+          60
+        ]
+      ]
+    ],
+    "capabilities": [
+      [
+        3,
+        [
+          62
+        ]
+      ]
+    ],
+    "databases": [
+      [
+        4,
+        [
+          0,
+          22
+        ]
+      ],
+      [
+        10,
+        [
+          30
+        ]
+      ]
+    ],
+    "are": [
+      [
+        4,
+        [
+          1
+        ]
+      ],
+      [
+        11,
+        [
+          4
+        ]
+      ]
+    ],
+    "essential": [
+      [
+        4,
+        [
+          2
+        ]
+      ],
+      [
+        7,
+        [
+          50
+        ]
+      ]
+    ],
+    "storing": [
+      [
+        4,
+        [
+          4
+        ]
+      ]
+    ],
+    "retrieving": [
+      [
+        4,
+        [
+          6
+        ]
+      ]
+    ],
+    "data": [
+      [
+        4,
+        [
+          7
+        ]
+      ],
+      [
+        5,
+        [
+          14
+        ]
+      ]
+    ],
+    "sql": [
+      [
+        4,
+        [
+          10
+        ]
+      ]
+    ],
+    "structured": [
+      [
+        4,
+        [
+          11
+        ]
+      ]
+    ],
+    "query": [
+      [
+        4,
+        [
+          12,
+          39
+        ]
+      ]
+    ],
+    "interacting": [
+      [
+        4,
+        [
+          19
+        ]
+      ]
+    ],
+    "relational": [
+      [
+        4,
+        [
+          21
+        ]
+      ]
+    ],
+    "key": [
+      [
+        4,
+        [
+          23
+        ]
+      ],
+      [
+        6,
+        [
+          29
+        ]
+      ],
+      [
+        7,
+        [
+          28
+        ]
+      ]
+    ],
+    "tables": [
+      [
+        4,
+        [
+          26
+        ]
+      ]
+    ],
+    "rows": [
+      [
+        4,
+        [
+          27
+        ]
+      ]
+    ],
+    "columns": [
+      [
+        4,
+        [
+          28
+        ]
+      ]
+    ],
+    "primary": [
+      [
+        4,
+        [
+          29
+        ]
+      ]
+    ],
+    "keys": [
+      [
+        4,
+        [
+          30,
+          32
+        ]
+      ]
+    ],
+    "foreign": [
+      [
+        4,
+        [
+          31
+        ]
+      ]
+    ],
+    "relationships": [
+      [
+        4,
+        [
+          34
+        ]
+      ]
+    ],
+    "understanding": [
+      [
+        4,
+        [
+          35
+        ]
+      ],
+      [
+        7,
+        [
+          47
+        ]
+      ],
+      [
+        9,
+        [
+          42
+        ]
+      ],
+      [
+        10,
+        [
+          36
+        ]
+      ]
+    ],
+    "normalization": [
+      [
+        4,
+        [
+          36
+        ]
+      ]
+    ],
+    "indexing": [
+      [
+        4,
+        [
+          37
+        ]
+      ]
+    ],
+    "optimization": [
+      [
+        4,
+        [
+          40
+        ]
+      ],
+      [
+        10,
+        [
+          42
+        ]
+      ]
+    ],
+    "crucial": [
+      [
+        4,
+        [
+          42
+        ]
+      ],
+      [
+        9,
+        [
+          51
+        ]
+      ]
+    ],
+    "efficient": [
+      [
+        4,
+        [
+          45
+        ]
+      ]
+    ],
+    "database": [
+      [
+        4,
+        [
+          46
+        ]
+      ]
+    ],
+    "systems": [
+      [
+        4,
+        [
+          47
+        ]
+      ]
+    ],
+    "subset": [
+      [
+        5,
+        [
+          4
+        ]
+      ]
+    ],
+    "artificial": [
+      [
+        5,
+        [
+          6
+        ]
+      ]
+    ],
+    "intelligence": [
+      [
+        5,
+        [
+          7
+        ]
+      ]
+    ],
+    "enables": [
+      [
+        5,
+        [
+          9
+        ]
+      ],
+      [
+        8,
+        [
+          40
+        ]
+      ]
+    ],
+    "computers": [
+      [
+        5,
+        [
+          10
+        ]
+      ]
+    ],
+    "learn": [
+      [
+        5,
+        [
+          12,
+          49
+        ]
+      ]
+    ],
+    "from": [
+      [
+        5,
+        [
+          13
+        ]
+      ]
+    ],
+    "without": [
+      [
+        5,
+        [
+          15
+        ]
+      ]
+    ],
+    "being": [
+      [
+        5,
+        [
+          16
+        ]
+      ]
+    ],
+    "explicitly": [
+      [
+        5,
+        [
+          17
+        ]
+      ]
+    ],
+    "programmed": [
+      [
+        5,
+        [
+          18
+        ]
+      ]
+    ],
+    "common": [
+      [
+        5,
+        [
+          19
+        ]
+      ]
+    ],
+    "types": [
+      [
+        5,
+        [
+          20
+        ]
+      ]
+    ],
+    "supervised": [
+      [
+        5,
+        [
+          22
+        ]
+      ]
+    ],
+    "classification": [
+      [
+        5,
+        [
+          24
+        ]
+      ]
+    ],
+    "regression": [
+      [
+        5,
+        [
+          25,
+          36
+        ]
+      ]
+    ],
+    "unsupervised": [
+      [
+        5,
+        [
+          26
+        ]
+      ]
+    ],
+    "clustering": [
+      [
+        5,
+        [
+          28
+        ]
+      ]
+    ],
+    "reinforcement": [
+      [
+        5,
+        [
+          30
+        ]
+      ]
+    ],
+    "popular": [
+      [
+        5,
+        [
+          32
+        ]
+      ],
+      [
+        9,
+        [
+          30
+        ]
+      ]
+    ],
+    "linear": [
+      [
+        5,
+        [
+          35
+        ]
+      ]
+    ],
+    "decision": [
+      [
+        5,
+        [
+          37
+        ]
+      ]
+    ],
+    "trees": [
+      [
+        5,
+        [
+          38
+        ]
+      ]
+    ],
+    "neural": [
+      [
+        5,
+        [
+          39
+        ]
+      ]
+    ],
+    "networks": [
+      [
+        5,
+        [
+          40
+        ]
+      ]
+    ],
+    "machines": [
+      [
+        5,
+        [
+          44
+        ]
+      ]
+    ],
+    "libraries": [
+      [
+        5,
+        [
+          46
+        ]
+      ]
+    ],
+    "scikit": [
+      [
+        5,
+        [
+          48
+        ]
+      ]
+    ],
+    "tensorflow": [
+      [
+        5,
+        [
+          50
+        ]
+      ]
+    ],
+    "pytorch": [
+      [
+        5,
+        [
+          52
+        ]
+      ]
+    ],
+    "make": [
+      [
+        5,
+        [
+          53
+        ]
+      ]
+    ],
+    "easy": [
+      [
+        5,
+        [
+          55
+        ]
+      ]
+    ],
+    "implement": [
+      [
+        5,
+        [
+          57
+        ]
+      ]
+    ],
+    "ml": [
+      [
+        5,
+        [
+          58
+        ]
+      ]
+    ],
+    "models": [
+      [
+        5,
+        [
+          59
+        ]
+      ]
+    ],
+    "representational": [
+      [
+        6,
+        [
+          1
+        ]
+      ]
+    ],
+    "state": [
+      [
+        6,
+        [
+          2
+        ]
+      ]
+    ],
+    "transfer": [
+      [
+        6,
+        [
+          3
+        ]
+      ]
+    ],
+    "architectural": [
+      [
+        6,
+        [
+          6
+        ]
+      ]
+    ],
+    "style": [
+      [
+        6,
+        [
+          7
+        ]
+      ]
+    ],
+    "designing": [
+      [
+        6,
+        [
+          9
+        ]
+      ]
+    ],
+    "services": [
+      [
+        6,
+        [
+          11
+        ]
+      ],
+      [
+        10,
+        [
+          12,
+          19
+        ]
+      ]
+    ],
+    "restful": [
+      [
+        6,
+        [
+          12
+        ]
+      ]
+    ],
+    "http": [
+      [
+        6,
+        [
+          15
+        ]
+      ]
+    ],
+    "methods": [
+      [
+        6,
+        [
+          16
+        ]
+      ]
+    ],
+    "get": [
+      [
+        6,
+        [
+          17
+        ]
+      ]
+    ],
+    "post": [
+      [
+        6,
+        [
+          18
+        ]
+      ]
+    ],
+    "put": [
+      [
+        6,
+        [
+          19
+        ]
+      ]
+    ],
+    "delete": [
+      [
+        6,
+        [
+          20
+        ]
+      ]
+    ],
+    "perform": [
+      [
+        6,
+        [
+          22
+        ]
+      ]
+    ],
+    "operations": [
+      [
+        6,
+        [
+          23
+        ]
+      ]
+    ],
+    "resources": [
+      [
+        6,
+        [
+          25
+        ]
+      ],
+      [
+        10,
+        [
+          6
+        ]
+      ]
+    ],
+    "identified": [
+      [
+        6,
+        [
+          26
+        ]
+      ]
+    ],
+    "urls": [
+      [
+        6,
+        [
+          28,
+          38
+        ]
+      ]
+    ],
+    "principles": [
+      [
+        6,
+        [
+          30
+        ]
+      ]
+    ],
+    "statelessness": [
+      [
+        6,
+        [
+          32
+        ]
+      ]
+    ],
+    "uniform": [
+      [
+        6,
+        [
+          33
+        ]
+      ]
+    ],
+    "interface": [
+      [
+        6,
+        [
+          34
+        ]
+      ]
+    ],
+    "resource": [
+      [
+        6,
+        [
+          36
+        ]
+      ]
+    ],
+    "based": [
+      [
+        6,
+        [
+          37
+        ]
+      ]
+    ],
+    "good": [
+      [
+        6,
+        [
+          39
+        ]
+      ]
+    ],
+    "design": [
+      [
+        6,
+        [
+          41
+        ]
+      ]
+    ],
+    "includes": [
+      [
+        6,
+        [
+          42
+        ]
+      ],
+      [
+        9,
+        [
+          19
+        ]
+      ]
+    ],
+    "proper": [
+      [
+        6,
+        [
+          43
+        ]
+      ]
+    ],
+    "status": [
+      [
+        6,
+        [
+          44
+        ]
+      ]
+    ],
+    "codes": [
+      [
+        6,
+        [
+          45
+        ]
+      ]
+    ],
+    "error": [
+      [
+        6,
+        [
+          46
+        ]
+      ]
+    ],
+    "handling": [
+      [
+        6,
+        [
+          47
+        ]
+      ]
+    ],
+    "versioning": [
+      [
+        6,
+        [
+          48
+        ]
+      ]
+    ],
+    "should": [
+      [
+        6,
+        [
+          52
+        ]
+      ]
+    ],
+    "be": [
+      [
+        6,
+        [
+          53
+        ]
+      ]
+    ],
+    "intuitive": [
+      [
+        6,
+        [
+          54
+        ]
+      ]
+    ],
+    "consistent": [
+      [
+        6,
+        [
+          55
+        ]
+      ]
+    ],
+    "follow": [
+      [
+        6,
+        [
+          57
+        ]
+      ]
+    ],
+    "industry": [
+      [
+        6,
+        [
+          58
+        ]
+      ]
+    ],
+    "best": [
+      [
+        6,
+        [
+          59
+        ]
+      ]
+    ],
+    "practices": [
+      [
+        6,
+        [
+          60
+        ]
+      ]
+    ],
+    "git": [
+      [
+        7,
+        [
+          0,
+          48
+        ]
+      ]
+    ],
+    "distributed": [
+      [
+        7,
+        [
+          3
+        ]
+      ]
+    ],
+    "version": [
+      [
+        7,
+        [
+          4
+        ]
+      ]
+    ],
+    "control": [
+      [
+        7,
+        [
+          5
+        ]
+      ]
+    ],
+    "system": [
+      [
+        7,
+        [
+          6
+        ]
+      ]
+    ],
+    "used": [
+      [
+        7,
+        [
+          7
+        ]
+      ]
+    ],
+    "millions": [
+      [
+        7,
+        [
+          9
+        ]
+      ]
+    ],
+    "developers": [
+      [
+        7,
+        [
+          11
+        ]
+      ]
+    ],
+    "worldwide": [
+      [
+        7,
+        [
+          12
+        ]
+      ]
+    ],
+    "allows": [
+      [
+        7,
+        [
+          14
+        ]
+      ],
+      [
+        8,
+        [
+          45
+        ]
+      ]
+    ],
+    "tracking": [
+      [
+        7,
+        [
+          15
+        ]
+      ]
+    ],
+    "changes": [
+      [
+        7,
+        [
+          16
+        ]
+      ]
+    ],
+    "code": [
+      [
+        7,
+        [
+          18
+        ]
+      ]
+    ],
+    "collaborating": [
+      [
+        7,
+        [
+          19
+        ]
+      ]
+    ],
+    "teams": [
+      [
+        7,
+        [
+          21
+        ]
+      ]
+    ],
+    "managing": [
+      [
+        7,
+        [
+          23
+        ]
+      ],
+      [
+        8,
+        [
+          46
+        ]
+      ]
+    ],
+    "different": [
+      [
+        7,
+        [
+          24
+        ]
+      ],
+      [
+        8,
+        [
+          21
+        ]
+      ]
+    ],
+    "versions": [
+      [
+        7,
+        [
+          25
+        ]
+      ]
+    ],
+    "projects": [
+      [
+        7,
+        [
+          27
+        ]
+      ]
+    ],
+    "repositories": [
+      [
+        7,
+        [
+          31
+        ]
+      ]
+    ],
+    "commits": [
+      [
+        7,
+        [
+          32
+        ]
+      ]
+    ],
+    "branches": [
+      [
+        7,
+        [
+          33
+        ]
+      ]
+    ],
+    "merges": [
+      [
+        7,
+        [
+          34
+        ]
+      ]
+    ],
+    "remotes": [
+      [
+        7,
+        [
+          36
+        ]
+      ]
+    ],
+    "platforms": [
+      [
+        7,
+        [
+          37
+        ]
+      ]
+    ],
+    "github": [
+      [
+        7,
+        [
+          39
+        ]
+      ]
+    ],
+    "gitlab": [
+      [
+        7,
+        [
+          41
+        ]
+      ]
+    ],
+    "provide": [
+      [
+        7,
+        [
+          42
+        ]
+      ]
+    ],
+    "hosting": [
+      [
+        7,
+        [
+          43
+        ]
+      ]
+    ],
+    "collaboration": [
+      [
+        7,
+        [
+          45
+        ]
+      ]
+    ],
+    "features": [
+      [
+        7,
+        [
+          46
+        ]
+      ],
+      [
+        9,
+        [
+          21
+        ]
+      ]
+    ],
+    "software": [
+      [
+        7,
+        [
+          53
+        ]
+      ]
+    ],
+    "development": [
+      [
+        7,
+        [
+          54
+        ]
+      ],
+      [
+        9,
+        [
+          54
+        ]
+      ]
+    ],
+    "workflows": [
+      [
+        7,
+        [
+          55
+        ]
+      ]
+    ],
+    "docker": [
+      [
+        8,
+        [
+          0,
+          23,
+          43
+        ]
+      ]
+    ],
+    "platform": [
+      [
+        8,
+        [
+          3
+        ]
+      ],
+      [
+        10,
+        [
+          56
+        ]
+      ]
+    ],
+    "developing": [
+      [
+        8,
+        [
+          5
+        ]
+      ]
+    ],
+    "shipping": [
+      [
+        8,
+        [
+          6
+        ]
+      ]
+    ],
+    "running": [
+      [
+        8,
+        [
+          8
+        ]
+      ],
+      [
+        9,
+        [
+          8
+        ]
+      ]
+    ],
+    "containers": [
+      [
+        8,
+        [
+          11,
+          12,
+          27
+        ]
+      ]
+    ],
+    "package": [
+      [
+        8,
+        [
+          13
+        ]
+      ]
+    ],
+    "their": [
+      [
+        8,
+        [
+          16
+        ]
+      ]
+    ],
+    "dependencies": [
+      [
+        8,
+        [
+          17
+        ]
+      ]
+    ],
+    "ensuring": [
+      [
+        8,
+        [
+          18
+        ]
+      ]
+    ],
+    "consistency": [
+      [
+        8,
+        [
+          19
+        ]
+      ]
+    ],
+    "across": [
+      [
+        8,
+        [
+          20
+        ]
+      ]
+    ],
+    "environments": [
+      [
+        8,
+        [
+          22
+        ]
+      ]
+    ],
+    "uses": [
+      [
+        8,
+        [
+          24
+        ]
+      ]
+    ],
+    "images": [
+      [
+        8,
+        [
+          25
+        ]
+      ]
+    ],
+    "dockerfile": [
+      [
+        8,
+        [
+          29
+        ]
+      ]
+    ],
+    "defining": [
+      [
+        8,
+        [
+          31
+        ]
+      ]
+    ],
+    "image": [
+      [
+        8,
+        [
+          32
+        ]
+      ]
+    ],
+    "builds": [
+      [
+        8,
+        [
+          33
+        ]
+      ]
+    ],
+    "containerization": [
+      [
+        8,
+        [
+          34
+        ]
+      ]
+    ],
+    "simplifies": [
+      [
+        8,
+        [
+          35
+        ]
+      ]
+    ],
+    "deployment": [
+      [
+        8,
+        [
+          36
+        ]
+      ],
+      [
+        10,
+        [
+          48
+        ]
+      ]
+    ],
+    "improves": [
+      [
+        8,
+        [
+          37
+        ]
+      ]
+    ],
+    "scalability": [
+      [
+        8,
+        [
+          38
+        ]
+      ],
+      [
+        10,
+        [
+          39
+        ]
+      ]
+    ],
+    "architecture": [
+      [
+        8,
+        [
+          42
+        ]
+      ],
+      [
+        10,
+        [
+          38
+        ]
+      ]
+    ],
+    "compose": [
+      [
+        8,
+        [
+          44
+        ]
+      ]
+    ],
+    "multi": [
+      [
+        8,
+        [
+          47
+        ]
+      ]
+    ],
+    "container": [
+      [
+        8,
+        [
+          48
+        ]
+      ]
+    ],
+    "easily": [
+      [
+        8,
+        [
+          50
+        ]
+      ]
+    ],
+    "javascript": [
+      [
+        9,
+        [
+          0,
+          18,
+          43
+        ]
+      ]
+    ],
+    "browsers": [
+      [
+        9,
+        [
+          10
+        ]
+      ]
+    ],
+    "servers": [
+      [
+        9,
+        [
+          13
+        ]
+      ],
+      [
+        10,
+        [
+          24
+        ]
+      ]
+    ],
+    "via": [
+      [
+        9,
+        [
+          14
+        ]
+      ]
+    ],
+    "es6": [
+      [
+        9,
+        [
+          20
+        ]
+      ]
+    ],
+    "arrow": [
+      [
+        9,
+        [
+          23
+        ]
+      ]
+    ],
+    "functions": [
+      [
+        9,
+        [
+          24
+        ]
+      ]
+    ],
+    "promises": [
+      [
+        9,
+        [
+          25
+        ]
+      ]
+    ],
+    "await": [
+      [
+        9,
+        [
+          27
+        ]
+      ]
+    ],
+    "modules": [
+      [
+        9,
+        [
+          29
+        ]
+      ]
+    ],
+    "react": [
+      [
+        9,
+        [
+          33
+        ]
+      ]
+    ],
+    "vue": [
+      [
+        9,
+        [
+          34
+        ]
+      ]
+    ],
+    "angular": [
+      [
+        9,
+        [
+          36
+        ]
+      ]
+    ],
+    "interactive": [
+      [
+        9,
+        [
+          39
+        ]
+      ]
+    ],
+    "user": [
+      [
+        9,
+        [
+          40
+        ]
+      ]
+    ],
+    "interfaces": [
+      [
+        9,
+        [
+          41
+        ]
+      ]
+    ],
+    "fundamentals": [
+      [
+        9,
+        [
+          44
+        ]
+      ]
+    ],
+    "dom": [
+      [
+        9,
+        [
+          45
+        ]
+      ]
+    ],
+    "manipulation": [
+      [
+        9,
+        [
+          46
+        ]
+      ]
+    ],
+    "asynchronous": [
+      [
+        9,
+        [
+          48
+        ]
+      ]
+    ],
+    "cloud": [
+      [
+        10,
+        [
+          0,
+          37,
+          51,
+          55
+        ]
+      ]
+    ],
+    "computing": [
+      [
+        10,
+        [
+          1,
+          5,
+          35
+        ]
+      ]
+    ],
+    "provides": [
+      [
+        10,
+        [
+          2
+        ]
+      ]
+    ],
+    "demand": [
+      [
+        10,
+        [
+          4
+        ]
+      ]
+    ],
+    "over": [
+      [
+        10,
+        [
+          7
+        ]
+      ]
+    ],
+    "internet": [
+      [
+        10,
+        [
+          9
+        ]
+      ]
+    ],
+    "amazon": [
+      [
+        10,
+        [
+          10
+        ]
+      ]
+    ],
+    "aws": [
+      [
+        10,
+        [
+          13
+        ]
+      ]
+    ],
+    "offers": [
+      [
+        10,
+        [
+          14
+        ]
+      ]
+    ],
+    "wide": [
+      [
+        10,
+        [
+          16
+        ]
+      ]
+    ],
+    "range": [
+      [
+        10,
+        [
+          17
+        ]
+      ]
+    ],
+    "ec2": [
+      [
+        10,
+        [
+          21
+        ]
+      ]
+    ],
+    "virtual": [
+      [
+        10,
+        [
+          23
+        ]
+      ]
+    ],
+    "s3": [
+      [
+        10,
+        [
+          25
+        ]
+      ]
+    ],
+    "storage": [
+      [
+        10,
+        [
+          27
+        ]
+      ]
+    ],
+    "rds": [
+      [
+        10,
+        [
+          28
+        ]
+      ]
+    ],
+    "lambda": [
+      [
+        10,
+        [
+          32
+        ]
+      ]
+    ],
+    "serverless": [
+      [
+        10,
+        [
+          34
+        ]
+      ]
+    ],
+    "cost": [
+      [
+        10,
+        [
+          41
+        ]
+      ]
+    ],
+    "application": [
+      [
+        10,
+        [
+          47
+        ]
+      ]
+    ],
+    "other": [
+      [
+        10,
+        [
+          49
+        ]
+      ]
+    ],
+    "major": [
+      [
+        10,
+        [
+          50
+        ]
+      ]
+    ],
+    "providers": [
+      [
+        10,
+        [
+          52
+        ]
+      ]
+    ],
+    "google": [
+      [
+        10,
+        [
+          54
+        ]
+      ]
+    ],
+    "microsoft": [
+      [
+        10,
+        [
+          58
+        ]
+      ]
+    ],
+    "azure": [
+      [
+        10,
+        [
+          59
+        ]
+      ]
+    ],
+    "jughead": [
+      [
+        11,
+        [
+          0
+        ]
+      ]
+    ],
+    "jones": [
+      [
+        11,
+        [
+          1
+        ]
+      ]
+    ],
+    "betty": [
+      [
+        11,
+        [
+          3
+        ]
+      ]
+    ],
+    "couple": [
+      [
+        11,
+        [
+          6
+        ]
+      ]
+    ]
+  },
+  "doc_word_counts": {
+    "1": 55,
+    "2": 57,
+    "3": 63,
+    "4": 48,
+    "5": 60,
+    "6": 61,
+    "7": 56,
+    "8": 51,
+    "9": 55,
+    "10": 60,
+    "11": 7
+  },
+  "word_doc_frequency": {
+    "python": 3,
+    "is": 10,
+    "a": 8,
+    "high": 1,
+    "level": 1,
+    "interpreted": 1,
+    "programming": 2,
+    "language": 3,
+    "known": 1,
+    "for": 9,
+    "its": 1,
+    "simplicity": 1,
+    "and": 11,
+    "readability": 1,
+    "it": 4,
+    "was": 1,
+    "created": 1,
+    "by": 3,
+    "guido": 1,
+    "van": 1,
+    "rossum": 1,
+    "first": 1,
+    "released": 1,
+    "in": 6,
+    "1991": 1,
+    "supports": 1,
+    "multiple": 1,
+    "paradigms": 1,
+    "including": 2,
+    "procedural": 1,
+    "object": 1,
+    "oriented": 1,
+    "functional": 1,
+    "has": 1,
+    "large": 1,
+    "standard": 2,
+    "library": 1,
+    "an": 2,
+    "active": 1,
+    "community": 1,
+    "that": 2,
+    "contributes": 1,
+    "thousands": 1,
+    "of": 6,
+    "third": 1,
+    "party": 1,
+    "packages": 1,
+    "fastapi": 1,
+    "modern": 5,
+    "fast": 1,
+    "web": 4,
+    "framework": 1,
+    "building": 3,
+    "apis": 2,
+    "with": 4,
+    "s": 1,
+    "built": 1,
+    "on": 4,
+    "top": 1,
+    "starlette": 1,
+    "pydantic": 1,
+    "providing": 1,
+    "automatic": 1,
+    "api": 2,
+    "documentation": 2,
+    "type": 1,
+    "validation": 1,
+    "async": 2,
+    "support": 2,
+    "one": 1,
+    "the": 5,
+    "fastest": 1,
+    "frameworks": 2,
+    "available": 1,
+    "comparable": 1,
+    "to": 4,
+    "node": 2,
+    "js": 2,
+    "go": 1,
+    "perfect": 1,
+    "rest": 2,
+    "microservices": 2,
+    "applications": 3,
+    "search": 1,
+    "engines": 1,
+    "use": 2,
+    "sophisticated": 1,
+    "algorithms": 2,
+    "find": 1,
+    "rank": 1,
+    "relevant": 1,
+    "documents": 1,
+    "core": 1,
+    "concepts": 3,
+    "include": 7,
+    "inverted": 1,
+    "indexes": 1,
+    "which": 1,
+    "map": 1,
+    "words": 1,
+    "ranking": 1,
+    "like": 4,
+    "tf": 1,
+    "idf": 1,
+    "bm25": 1,
+    "term": 1,
+    "frequency": 1,
+    "inverse": 1,
+    "document": 1,
+    "measures": 1,
+    "how": 1,
+    "important": 2,
+    "word": 1,
+    "collection": 1,
+    "also": 1,
+    "machine": 2,
+    "learning": 2,
+    "vector": 2,
+    "embeddings": 1,
+    "semantic": 1,
+    "capabilities": 1,
+    "databases": 2,
+    "are": 2,
+    "essential": 2,
+    "storing": 1,
+    "retrieving": 1,
+    "data": 2,
+    "sql": 1,
+    "structured": 1,
+    "query": 1,
+    "interacting": 1,
+    "relational": 1,
+    "key": 3,
+    "tables": 1,
+    "rows": 1,
+    "columns": 1,
+    "primary": 1,
+    "keys": 1,
+    "foreign": 1,
+    "relationships": 1,
+    "understanding": 4,
+    "normalization": 1,
+    "indexing": 1,
+    "optimization": 2,
+    "crucial": 2,
+    "efficient": 1,
+    "database": 1,
+    "systems": 1,
+    "subset": 1,
+    "artificial": 1,
+    "intelligence": 1,
+    "enables": 2,
+    "computers": 1,
+    "learn": 1,
+    "from": 1,
+    "without": 1,
+    "being": 1,
+    "explicitly": 1,
+    "programmed": 1,
+    "common": 1,
+    "types": 1,
+    "supervised": 1,
+    "classification": 1,
+    "regression": 1,
+    "unsupervised": 1,
+    "clustering": 1,
+    "reinforcement": 1,
+    "popular": 2,
+    "linear": 1,
+    "decision": 1,
+    "trees": 1,
+    "neural": 1,
+    "networks": 1,
+    "machines": 1,
+    "libraries": 1,
+    "scikit": 1,
+    "tensorflow": 1,
+    "pytorch": 1,
+    "make": 1,
+    "easy": 1,
+    "implement": 1,
+    "ml": 1,
+    "models": 1,
+    "representational": 1,
+    "state": 1,
+    "transfer": 1,
+    "architectural": 1,
+    "style": 1,
+    "designing": 1,
+    "services": 2,
+    "restful": 1,
+    "http": 1,
+    "methods": 1,
+    "get": 1,
+    "post": 1,
+    "put": 1,
+    "delete": 1,
+    "perform": 1,
+    "operations": 1,
+    "resources": 2,
+    "identified": 1,
+    "urls": 1,
+    "principles": 1,
+    "statelessness": 1,
+    "uniform": 1,
+    "interface": 1,
+    "resource": 1,
+    "based": 1,
+    "good": 1,
+    "design": 1,
+    "includes": 2,
+    "proper": 1,
+    "status": 1,
+    "codes": 1,
+    "error": 1,
+    "handling": 1,
+    "versioning": 1,
+    "should": 1,
+    "be": 1,
+    "intuitive": 1,
+    "consistent": 1,
+    "follow": 1,
+    "industry": 1,
+    "best": 1,
+    "practices": 1,
+    "git": 1,
+    "distributed": 1,
+    "version": 1,
+    "control": 1,
+    "system": 1,
+    "used": 1,
+    "millions": 1,
+    "developers": 1,
+    "worldwide": 1,
+    "allows": 2,
+    "tracking": 1,
+    "changes": 1,
+    "code": 1,
+    "collaborating": 1,
+    "teams": 1,
+    "managing": 2,
+    "different": 2,
+    "versions": 1,
+    "projects": 1,
+    "repositories": 1,
+    "commits": 1,
+    "branches": 1,
+    "merges": 1,
+    "remotes": 1,
+    "platforms": 1,
+    "github": 1,
+    "gitlab": 1,
+    "provide": 1,
+    "hosting": 1,
+    "collaboration": 1,
+    "features": 2,
+    "software": 1,
+    "development": 2,
+    "workflows": 1,
+    "docker": 1,
+    "platform": 2,
+    "developing": 1,
+    "shipping": 1,
+    "running": 2,
+    "containers": 1,
+    "package": 1,
+    "their": 1,
+    "dependencies": 1,
+    "ensuring": 1,
+    "consistency": 1,
+    "across": 1,
+    "environments": 1,
+    "uses": 1,
+    "images": 1,
+    "dockerfile": 1,
+    "defining": 1,
+    "image": 1,
+    "builds": 1,
+    "containerization": 1,
+    "simplifies": 1,
+    "deployment": 2,
+    "improves": 1,
+    "scalability": 2,
+    "architecture": 2,
+    "compose": 1,
+    "multi": 1,
+    "container": 1,
+    "easily": 1,
+    "javascript": 1,
+    "browsers": 1,
+    "servers": 2,
+    "via": 1,
+    "es6": 1,
+    "arrow": 1,
+    "functions": 1,
+    "promises": 1,
+    "await": 1,
+    "modules": 1,
+    "react": 1,
+    "vue": 1,
+    "angular": 1,
+    "interactive": 1,
+    "user": 1,
+    "interfaces": 1,
+    "fundamentals": 1,
+    "dom": 1,
+    "manipulation": 1,
+    "asynchronous": 1,
+    "cloud": 1,
+    "computing": 1,
+    "provides": 1,
+    "demand": 1,
+    "over": 1,
+    "internet": 1,
+    "amazon": 1,
+    "aws": 1,
+    "offers": 1,
+    "wide": 1,
+    "range": 1,
+    "ec2": 1,
+    "virtual": 1,
+    "s3": 1,
+    "storage": 1,
+    "rds": 1,
+    "lambda": 1,
+    "serverless": 1,
+    "cost": 1,
+    "application": 1,
+    "other": 1,
+    "major": 1,
+    "providers": 1,
+    "google": 1,
+    "microsoft": 1,
+    "azure": 1,
+    "jughead": 1,
+    "jones": 1,
+    "betty": 1,
+    "couple": 1
+  },
+  "next_doc_id": 12
+}

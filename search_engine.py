@@ -41,10 +41,12 @@ class SearchEngine:
        - Higher score = More relevant document
     """
     
-    def __init__(self):
+    
+    def __init__(self, persist_dir: str = "."):
+        self.persist_dir = persist_dir
+        self.index_file = f"{persist_dir}/search_index.json"
+        
         # Inverted Index: word → list of [document_id, positions]
-        # positions: where the word appears in the document
-        # Using lists instead of tuples so we can modify positions
         self.inverted_index: Dict[str, List[List]] = defaultdict(list)
         
         # Document storage: document_id → Document object
@@ -57,7 +59,74 @@ class SearchEngine:
         self.word_doc_frequency: Dict[str, int] = defaultdict(int)
         
         self.next_doc_id = 1
+        
+        # Try to load existing data
+        self.load()
     
+    def save(self):
+        """Save search engine state to disk"""
+        import json
+        import os
+        
+        # Convert documents to dict for serialization
+        docs_dict = {
+            doc_id: {"id": d.id, "title": d.title, "content": d.content}
+            for doc_id, d in self.documents.items()
+        }
+        
+        state = {
+            "documents": docs_dict,
+            "inverted_index": self.inverted_index,
+            "doc_word_counts": self.doc_word_counts,
+            "word_doc_frequency": self.word_doc_frequency,
+            "next_doc_id": self.next_doc_id
+        }
+        
+        try:
+            with open(self.index_file, 'w', encoding='utf-8') as f:
+                json.dump(state, f, ensure_ascii=False, indent=2)
+            print(f"✓ Saved search index to {self.index_file}")
+        except Exception as e:
+            print(f"⚠ Error saving search index: {e}")
+            
+    def load(self):
+        """Load search engine state from disk"""
+        import json
+        import os
+        
+        if not os.path.exists(self.index_file):
+            return
+            
+        try:
+            with open(self.index_file, 'r', encoding='utf-8') as f:
+                state = json.load(f)
+            
+            # Restore documents
+            self.documents = {}
+            for doc_id_str, doc_data in state["documents"].items():
+                doc_id = int(doc_id_str)
+                self.documents[doc_id] = Document(
+                    id=doc_data["id"],
+                    title=doc_data["title"],
+                    content=doc_data["content"]
+                )
+            
+            # Restore other structures
+            # Note: JSON converts int keys to strings, so we need to convert back where necessary
+            self.inverted_index = defaultdict(list, state["inverted_index"])
+            
+            self.doc_word_counts = {
+                int(k): v for k, v in state["doc_word_counts"].items()
+            }
+            
+            self.word_doc_frequency = defaultdict(int, state["word_doc_frequency"])
+            self.next_doc_id = state["next_doc_id"]
+            
+            print(f"✓ Loaded {len(self.documents)} documents from {self.index_file}")
+            
+        except Exception as e:
+            print(f"⚠ Error loading search index: {e}")
+
     def _tokenize(self, text: str) -> List[str]:
         """
         Tokenization: Break text into individual words
@@ -180,6 +249,9 @@ class SearchEngine:
             
             if not found:
                 self.inverted_index[word].append([doc_id, [position]])
+        
+        # SAVE STATE
+        self.save()
         
         return doc_id
     
