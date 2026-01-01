@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Search Engine - Search + Retrieval + LLM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            border-radius: 8px 8px 0 0;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .tab.active {
+            background: white;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .card.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .search-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .search-options label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .search-options input[type="radio"] {
+            cursor: pointer;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .result-item {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .result-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .result-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+
+        .result-snippet {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .result-scores {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .score-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+
+        .score-keyword {
+            background: #28a745;
+            color: white;
+        }
+
+        .score-semantic {
+            background: #17a2b8;
+            color: white;
+        }
+
+        .score-combined {
+            background: #667eea;
+            color: white;
+        }
+
+        .answer-box {
+            background: #e7f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .answer-box h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .answer-text {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .sources {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+        }
+
+        .sources h4 {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .source-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .source-list li {
+            padding: 5px 0;
+            color: #667eea;
+            font-size: 0.9em;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .stat-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            margin-top: 5px;
+        }
+
+        .badge-success {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .badge-warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Enhanced Search Engine</h1>
+            <p>Hybrid Search + Semantic Retrieval + LLM-Powered Q&A</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('search')">🔎 Search</button>
+            <button class="tab" onclick="showTab('qa')">❓ Ask Questions</button>
+            <button class="tab" onclick="showTab('add')">➕ Add Document</button>
+        </div>
+
+        <!-- Search Tab -->
+        <div id="searchTab" class="tab-content">
+            <div class="card">
+                <h2>Search Documents</h2>
+                <div class="search-box">
+                    <input type="text" id="searchQuery" placeholder="Enter your search query..." onkeypress="handleSearchKeyPress(event)">
+                    <button class="btn" onclick="performSearch()">Search</button>
+                </div>
+                <div class="search-options">
+                    <label><input type="radio" name="searchMode" value="hybrid" checked> Hybrid (Keyword + Semantic)</label>
+                    <label><input type="radio" name="searchMode" value="keyword"> Keyword Only</label>
+                    <label><input type="radio" name="searchMode" value="semantic"> Semantic Only</label>
+                </div>
+                <div id="searchResults" class="results"></div>
+            </div>
+        </div>
+
+        <!-- Q&A Tab -->
+        <div id="qaTab" class="tab-content hidden">
+            <div class="card full-width">
+                <h2>Ask Questions</h2>
+                <p style="color: #666; margin-bottom: 15px;">Ask natural language questions and get AI-powered answers based on your documents.</p>
+                <div class="search-box">
+                    <input type="text" id="questionInput" placeholder="e.g., What is Python? How do I build a web app?" onkeypress="handleQaKeyPress(event)">
+                    <button class="btn" onclick="askQuestion()">Ask</button>
+                </div>
+                <div id="answerResult" class="results"></div>
+            </div>
+        </div>
+
+        <!-- Add Document Tab -->
+        <div id="addTab" class="tab-content hidden">
+            <div class="card">
+                <h2>Add New Document</h2>
+                <form id="addDocumentForm" onsubmit="addDocument(event)">
+                    <div class="form-group">
+                        <label for="docTitle">Title:</label>
+                        <input type="text" id="docTitle" required placeholder="Document title">
+                    </div>
+                    <div class="form-group">
+                        <label for="docContent">Content:</label>
+                        <textarea id="docContent" required placeholder="Document content..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Add Document</button>
+                </form>
+                <div id="addMessage"></div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="card">
+            <h2>System Statistics</h2>
+            <div id="stats" class="stats">
+                <div class="loading">Loading statistics...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        // Load stats on page load
+        window.onload = function() {
+            loadStats();
+        };
+
+        // Tab switching
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.add('hidden');
+            });
+            
+            // Remove active class from all tab buttons
+            document.querySelectorAll('.tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + 'Tab').classList.remove('hidden');
+            event.target.classList.add('active');
+        }
+
+        // Handle Enter key in search box
+        function handleSearchKeyPress(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        }
+
+        // Handle Enter key in Q&A box
+        function handleQaKeyPress(event) {
+            if (event.key === 'Enter') {
+                askQuestion();
+            }
+        }
+
+        // Perform search
+        async function performSearch() {
+            const query = document.getElementById('searchQuery').value.trim();
+            const resultsDiv = document.getElementById('searchResults');
+            const mode = document.querySelector('input[name="searchMode"]:checked').value;
+
+            if (!query) {
+                resultsDiv.innerHTML = '<div class="message error">Please enter a search query</div>';
+                return;
+            }
+
+            resultsDiv.innerHTML = '<div class="loading">Searching...</div>';
+
+            try {
+                const response = await fetch(`${API_BASE}/search?q=${encodeURIComponent(query)}&mode=${mode}`);
+                const data = await response.json();
+
+                if (data.results && data.results.length > 0) {
+                    let html = `<h3 style="margin-bottom: 15px; color: #333;">Found ${data.count} result(s) for "${data.query}"</h3>`;
+                    data.results.forEach(result => {
+                        html += `
+                            <div class="result-item">
+                                <div class="result-title">${escapeHtml(result.title)}</div>
+                                <div class="result-snippet">${escapeHtml(result.snippet)}</div>
+                                <div class="result-scores">
+                        `;
+                        
+                        if (result.keyword_score !== undefined) {
+                            html += `<span class="score-badge score-keyword">Keyword: ${result.keyword_score}</span>`;
+                        }
+                        if (result.semantic_score !== undefined) {
+                            html += `<span class="score-badge score-semantic">Semantic: ${result.semantic_score}</span>`;
+                        }
+                        if (result.combined_score !== undefined) {
+                            html += `<span class="score-badge score-combined">Combined: ${result.combined_score}</span>`;
+                        } else if (result.score !== undefined) {
+                            html += `<span class="score-badge score-combined">Score: ${result.score}</span>`;
+                        }
+                        
+                        html += `
+                                </div>
+                            </div>
+                        `;
+                    });
+                    resultsDiv.innerHTML = html;
+                } else {
+                    resultsDiv.innerHTML = `<div class="message">No results found for "${data.query}"</div>`;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = `<div class="message error">Error: ${error.message}</div>`;
+            }
+
+            loadStats();
+        }
+
+        // Ask question
+        async function askQuestion() {
+            const question = document.getElementById('questionInput').value.trim();
+            const answerDiv = document.getElementById('answerResult');
+
+            if (!question) {
+                answerDiv.innerHTML = '<div class="message error">Please enter a question</div>';
+                return;
+            }
+
+            answerDiv.innerHTML = '<div class="loading">Thinking...</div>';
+
+            try {
+                const response = await fetch(`${API_BASE}/ask`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ question, top_k_docs: 5, use_hybrid: true })
+                });
+
+                const data = await response.json();
+
+                let html = `
+                    <div class="answer-box">
+                        <h3>Answer</h3>
+                        <div class="answer-text">${escapeHtml(data.answer).replace(/\n/g, '<br>')}</div>
+                `;
+
+                if (data.sources && data.sources.length > 0) {
+                    html += `
+                        <div class="sources">
+                            <h4>Sources:</h4>
+                            <ul class="source-list">
+                    `;
+                    data.sources.forEach(source => {
+                        html += `<li>• ${escapeHtml(source.title || 'Document ' + source.id)}</li>`;
+                    });
+                    html += `</ul></div>`;
+                }
+
+                if (data.model) {
+                    html += `<div style="margin-top: 10px; font-size: 0.85em; color: #666;">Model: ${data.model}</div>`;
+                }
+
+                html += `</div>`;
+
+                answerDiv.innerHTML = html;
+            } catch (error) {
+                answerDiv.innerHTML = `<div class="message error">Error: ${error.message}</div>`;
+            }
+        }
+
+        // Add document
+        async function addDocument(event) {
+            event.preventDefault();
+            const messageDiv = document.getElementById('addMessage');
+            const title = document.getElementById('docTitle').value;
+            const content = document.getElementById('docContent').value;
+
+            messageDiv.innerHTML = '<div class="loading">Adding document...</div>';
+
+            try {
+                const response = await fetch(`${API_BASE}/documents`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ title, content })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    messageDiv.innerHTML = `<div class="message success">Document "${data.title}" added successfully! (ID: ${data.id})</div>`;
+                    document.getElementById('addDocumentForm').reset();
+                    loadStats();
+                } else {
+                    messageDiv.innerHTML = `<div class="message error">Error: ${data.detail || 'Failed to add document'}</div>`;
+                }
+            } catch (error) {
+                messageDiv.innerHTML = `<div class="message error">Error: ${error.message}</div>`;
+            }
+        }
+
+        // Load statistics
+        async function loadStats() {
+            const statsDiv = document.getElementById('stats');
+
+            try {
+                const response = await fetch(`${API_BASE}/stats`);
+                const data = await response.json();
+
+                statsDiv.innerHTML = `
+                    <div class="stat-item">
+                        <div class="stat-value">${data.total_documents || 0}</div>
+                        <div class="stat-label">Documents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${data.total_words_indexed || 0}</div>
+                        <div class="stat-label">Words Indexed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${data.unique_words || 0}</div>
+                        <div class="stat-label">Unique Words</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${data.vector_search_available ? '✓' : '✗'}</div>
+                        <div class="stat-label">Vector Search</div>
+                        ${data.vector_search_available ? 
+                            `<span class="stat-badge badge-success">Available</span>` : 
+                            `<span class="stat-badge badge-warning">Not Available</span>`}
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${data.llm_available ? '✓' : '✗'}</div>
+                        <div class="stat-label">LLM</div>
+                        ${data.llm_available ? 
+                            `<span class="stat-badge badge-success">${data.llm_provider || 'Available'}</span>` : 
+                            `<span class="stat-badge badge-warning">Not Available</span>`}
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">${data.search_mode || 'unknown'}</div>
+                        <div class="stat-label">Search Mode</div>
+                    </div>
+                `;
+            } catch (error) {
+                statsDiv.innerHTML = `<div class="message error">Error loading stats: ${error.message}</div>`;
+            }
+        }
+
+        // Escape HTML to prevent XSS
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
+
+
