@@ -54,6 +54,56 @@
       "id": 11,
       "title": "Riverdale",
       "content": "jughead jones and betty are a couple"
+    },
+    "12": {
+      "id": 12,
+      "title": "Introduction to Python Programming",
+      "content": "\n        Python is a high-level, interpreted programming language known for its simplicity and readability.\n        It was created by Guido van Rossum and first released in 1991. Python supports multiple programming\n        paradigms including procedural, object-oriented, and functional programming. It has a large standard\n        library and an active community that contributes thousands of third-party packages.\n        "
+    },
+    "13": {
+      "id": 13,
+      "title": "Building Web Applications with FastAPI",
+      "content": "\n        FastAPI is a modern, fast web framework for building APIs with Python. It's built on top of Starlette\n        and Pydantic, providing automatic API documentation, type validation, and async support. FastAPI is\n        one of the fastest Python frameworks available, comparable to Node.js and Go. It's perfect for\n        building REST APIs, microservices, and modern web applications.\n        "
+    },
+    "14": {
+      "id": 14,
+      "title": "Understanding Search Engines and Information Retrieval",
+      "content": "\n        Search engines use sophisticated algorithms to find and rank relevant documents. The core concepts\n        include inverted indexes, which map words to documents, and ranking algorithms like TF-IDF and BM25.\n        TF-IDF (Term Frequency-Inverse Document Frequency) measures how important a word is to a document\n        in a collection. Modern search engines also use machine learning and vector embeddings for semantic\n        search capabilities.\n        "
+    },
+    "15": {
+      "id": 15,
+      "title": "Database Design and SQL Fundamentals",
+      "content": "\n        Databases are essential for storing and retrieving data in applications. SQL (Structured Query Language)\n        is the standard language for interacting with relational databases. Key concepts include tables, rows,\n        columns, primary keys, foreign keys, and relationships. Understanding normalization, indexing, and\n        query optimization is crucial for building efficient database systems.\n        "
+    },
+    "16": {
+      "id": 16,
+      "title": "Machine Learning Basics",
+      "content": "\n        Machine learning is a subset of artificial intelligence that enables computers to learn from data\n        without being explicitly programmed. Common types include supervised learning (classification,\n        regression), unsupervised learning (clustering), and reinforcement learning. Popular algorithms\n        include linear regression, decision trees, neural networks, and support vector machines. Python\n        libraries like scikit-learn, TensorFlow, and PyTorch make it easy to implement ML models.\n        "
+    },
+    "17": {
+      "id": 17,
+      "title": "RESTful API Design Principles",
+      "content": "\n        REST (Representational State Transfer) is an architectural style for designing web services. RESTful\n        APIs use HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources identified by URLs.\n        Key principles include statelessness, uniform interface, and resource-based URLs. Good API design\n        includes proper status codes, error handling, versioning, and documentation. APIs should be intuitive,\n        consistent, and follow industry best practices.\n        "
+    },
+    "18": {
+      "id": 18,
+      "title": "Version Control with Git",
+      "content": "\n        Git is a distributed version control system used by millions of developers worldwide. It allows\n        tracking changes in code, collaborating with teams, and managing different versions of projects.\n        Key concepts include repositories, commits, branches, merges, and remotes. Platforms like GitHub\n        and GitLab provide hosting and collaboration features. Understanding Git is essential for modern\n        software development workflows.\n        "
+    },
+    "19": {
+      "id": 19,
+      "title": "Docker and Containerization",
+      "content": "\n        Docker is a platform for developing, shipping, and running applications in containers. Containers\n        package applications with their dependencies, ensuring consistency across different environments.\n        Docker uses images and containers, with Dockerfile for defining image builds. Containerization\n        simplifies deployment, improves scalability, and enables microservices architecture. Docker Compose\n        allows managing multi-container applications easily.\n        "
+    },
+    "20": {
+      "id": 20,
+      "title": "JavaScript and Modern Web Development",
+      "content": "\n        JavaScript is the programming language of the web, running in browsers and on servers via Node.js.\n        Modern JavaScript includes ES6+ features like arrow functions, promises, async/await, and modules.\n        Popular frameworks include React, Vue, and Angular for building interactive user interfaces.\n        Understanding JavaScript fundamentals, DOM manipulation, and asynchronous programming is crucial\n        for web development.\n        "
+    },
+    "21": {
+      "id": 21,
+      "title": "Cloud Computing and AWS Services",
+      "content": "\n        Cloud computing provides on-demand computing resources over the internet. Amazon Web Services (AWS)\n        offers a wide range of services including EC2 for virtual servers, S3 for storage, RDS for databases,\n        and Lambda for serverless computing. Understanding cloud architecture, scalability, and cost\n        optimization is important for modern application deployment. Other major cloud providers include\n        Google Cloud Platform and Microsoft Azure.\n        "
     }
   },
   "inverted_index": {
@@ -74,6 +124,26 @@
       ],
       [
         5,
+        [
+          45
+        ]
+      ],
+      [
+        12,
+        [
+          0,
+          26
+        ]
+      ],
+      [
+        13,
+        [
+          11,
+          36
+        ]
+      ],
+      [
+        16,
         [
           45
         ]
@@ -143,6 +213,70 @@
         [
           43
         ]
+      ],
+      [
+        12,
+        [
+          1
+        ]
+      ],
+      [
+        13,
+        [
+          1,
+          31
+        ]
+      ],
+      [
+        14,
+        [
+          42
+        ]
+      ],
+      [
+        15,
+        [
+          14,
+          41
+        ]
+      ],
+      [
+        16,
+        [
+          2
+        ]
+      ],
+      [
+        17,
+        [
+          4
+        ]
+      ],
+      [
+        18,
+        [
+          1,
+          49
+        ]
+      ],
+      [
+        19,
+        [
+          1
+        ]
+      ],
+      [
+        20,
+        [
+          1,
+          50
+        ]
+      ],
+      [
+        21,
+        [
+          43
+        ]
       ]
     ],
     "a": [
@@ -196,11 +330,62 @@
         [
           5
         ]
+      ],
+      [
+        12,
+        [
+          2,
+          40
+        ]
+      ],
+      [
+        13,
+        [
+          2
+        ]
+      ],
+      [
+        14,
+        [
+          40,
+          44,
+          47
+        ]
+      ],
+      [
+        16,
+        [
+          3
+        ]
+      ],
+      [
+        18,
+        [
+          2
+        ]
+      ],
+      [
+        19,
+        [
+          2
+        ]
+      ],
+      [
+        21,
+        [
+          15
+        ]
       ]
     ],
     "high": [
       [
         1,
+        [
+          3
+        ]
+      ],
+      [
+        12,
         [
           3
         ]
@@ -212,11 +397,23 @@
         [
           4
         ]
+      ],
+      [
+        12,
+        [
+          4
+        ]
       ]
     ],
     "interpreted": [
       [
         1,
+        [
+          5
+        ]
+      ],
+      [
+        12,
         [
           5
         ]
@@ -233,6 +430,21 @@
       ],
       [
         9,
+        [
+          3,
+          49
+        ]
+      ],
+      [
+        12,
+        [
+          6,
+          29,
+          37
+        ]
+      ],
+      [
+        20,
         [
           3,
           49
@@ -258,11 +470,36 @@
         [
           4
         ]
+      ],
+      [
+        12,
+        [
+          7
+        ]
+      ],
+      [
+        15,
+        [
+          13,
+          17
+        ]
+      ],
+      [
+        20,
+        [
+          4
+        ]
       ]
     ],
     "known": [
       [
         1,
+        [
+          8
+        ]
+      ],
+      [
+        12,
         [
           8
         ]
@@ -331,6 +568,69 @@
           33,
           45
         ]
+      ],
+      [
+        12,
+        [
+          9
+        ]
+      ],
+      [
+        13,
+        [
+          7,
+          48
+        ]
+      ],
+      [
+        14,
+        [
+          59
+        ]
+      ],
+      [
+        15,
+        [
+          3,
+          18,
+          43
+        ]
+      ],
+      [
+        17,
+        [
+          8
+        ]
+      ],
+      [
+        18,
+        [
+          51
+        ]
+      ],
+      [
+        19,
+        [
+          4,
+          30
+        ]
+      ],
+      [
+        20,
+        [
+          37,
+          52
+        ]
+      ],
+      [
+        21,
+        [
+          22,
+          26,
+          29,
+          33,
+          45
+        ]
       ]
     ],
     "its": [
@@ -339,11 +639,23 @@
         [
           10
         ]
+      ],
+      [
+        12,
+        [
+          10
+        ]
       ]
     ],
     "simplicity": [
       [
         1,
+        [
+          11
+        ]
+      ],
+      [
+        12,
         [
           11
         ]
@@ -440,11 +752,102 @@
         [
           2
         ]
+      ],
+      [
+        12,
+        [
+          12,
+          21,
+          35,
+          44
+        ]
+      ],
+      [
+        13,
+        [
+          19,
+          27,
+          43,
+          53
+        ]
+      ],
+      [
+        14,
+        [
+          7,
+          22,
+          28,
+          56
+        ]
+      ],
+      [
+        15,
+        [
+          5,
+          33,
+          38
+        ]
+      ],
+      [
+        16,
+        [
+          29,
+          41,
+          51
+        ]
+      ],
+      [
+        17,
+        [
+          35,
+          49,
+          56
+        ]
+      ],
+      [
+        18,
+        [
+          22,
+          35,
+          40,
+          44
+        ]
+      ],
+      [
+        19,
+        [
+          7,
+          26,
+          39
+        ]
+      ],
+      [
+        20,
+        [
+          11,
+          28,
+          35,
+          47
+        ]
+      ],
+      [
+        21,
+        [
+          31,
+          40,
+          57
+        ]
       ]
     ],
     "readability": [
       [
         1,
+        [
+          13
+        ]
+      ],
+      [
+        12,
         [
           13
         ]
@@ -476,6 +879,32 @@
         [
           13
         ]
+      ],
+      [
+        12,
+        [
+          14,
+          38
+        ]
+      ],
+      [
+        13,
+        [
+          12,
+          45
+        ]
+      ],
+      [
+        16,
+        [
+          54
+        ]
+      ],
+      [
+        18,
+        [
+          13
+        ]
       ]
     ],
     "was": [
@@ -484,11 +913,23 @@
         [
           15
         ]
+      ],
+      [
+        12,
+        [
+          15
+        ]
       ]
     ],
     "created": [
       [
         1,
+        [
+          16
+        ]
+      ],
+      [
+        12,
         [
           16
         ]
@@ -512,11 +953,35 @@
         [
           8
         ]
+      ],
+      [
+        12,
+        [
+          17
+        ]
+      ],
+      [
+        17,
+        [
+          27
+        ]
+      ],
+      [
+        18,
+        [
+          8
+        ]
       ]
     ],
     "guido": [
       [
         1,
+        [
+          18
+        ]
+      ],
+      [
+        12,
         [
           18
         ]
@@ -528,11 +993,23 @@
         [
           19
         ]
+      ],
+      [
+        12,
+        [
+          19
+        ]
       ]
     ],
     "rossum": [
       [
         1,
+        [
+          20
+        ]
+      ],
+      [
+        12,
         [
           20
         ]
@@ -544,11 +1021,23 @@
         [
           22
         ]
+      ],
+      [
+        12,
+        [
+          22
+        ]
       ]
     ],
     "released": [
       [
         1,
+        [
+          23
+        ]
+      ],
+      [
+        12,
         [
           23
         ]
@@ -590,11 +1079,53 @@
         [
           9
         ]
+      ],
+      [
+        12,
+        [
+          24
+        ]
+      ],
+      [
+        14,
+        [
+          46
+        ]
+      ],
+      [
+        15,
+        [
+          8
+        ]
+      ],
+      [
+        18,
+        [
+          17
+        ]
+      ],
+      [
+        19,
+        [
+          10
+        ]
+      ],
+      [
+        20,
+        [
+          9
+        ]
       ]
     ],
     "1991": [
       [
         1,
+        [
+          25
+        ]
+      ],
+      [
+        12,
         [
           25
         ]
@@ -606,6 +1137,12 @@
         [
           27
         ]
+      ],
+      [
+        12,
+        [
+          27
+        ]
       ]
     ],
     "multiple": [
@@ -614,11 +1151,23 @@
         [
           28
         ]
+      ],
+      [
+        12,
+        [
+          28
+        ]
       ]
     ],
     "paradigms": [
       [
         1,
+        [
+          30
+        ]
+      ],
+      [
+        12,
         [
           30
         ]
@@ -636,11 +1185,29 @@
         [
           20
         ]
+      ],
+      [
+        12,
+        [
+          31
+        ]
+      ],
+      [
+        21,
+        [
+          20
+        ]
       ]
     ],
     "procedural": [
       [
         1,
+        [
+          32
+        ]
+      ],
+      [
+        12,
         [
           32
         ]
@@ -652,11 +1219,23 @@
         [
           33
         ]
+      ],
+      [
+        12,
+        [
+          33
+        ]
       ]
     ],
     "oriented": [
       [
         1,
+        [
+          34
+        ]
+      ],
+      [
+        12,
         [
           34
         ]
@@ -668,6 +1247,12 @@
         [
           36
         ]
+      ],
+      [
+        12,
+        [
+          36
+        ]
       ]
     ],
     "has": [
@@ -676,11 +1261,23 @@
         [
           39
         ]
+      ],
+      [
+        12,
+        [
+          39
+        ]
       ]
     ],
     "large": [
       [
         1,
+        [
+          41
+        ]
+      ],
+      [
+        12,
         [
           41
         ]
@@ -698,11 +1295,29 @@
         [
           16
         ]
+      ],
+      [
+        12,
+        [
+          42
+        ]
+      ],
+      [
+        15,
+        [
+          16
+        ]
       ]
     ],
     "library": [
       [
         1,
+        [
+          43
+        ]
+      ],
+      [
+        12,
         [
           43
         ]
@@ -720,6 +1335,18 @@
         [
           5
         ]
+      ],
+      [
+        12,
+        [
+          45
+        ]
+      ],
+      [
+        17,
+        [
+          5
+        ]
       ]
     ],
     "active": [
@@ -728,11 +1355,23 @@
         [
           46
         ]
+      ],
+      [
+        12,
+        [
+          46
+        ]
       ]
     ],
     "community": [
       [
         1,
+        [
+          47
+        ]
+      ],
+      [
+        12,
         [
           47
         ]
@@ -750,6 +1389,18 @@
         [
           8
         ]
+      ],
+      [
+        12,
+        [
+          48
+        ]
+      ],
+      [
+        16,
+        [
+          8
+        ]
       ]
     ],
     "contributes": [
@@ -758,11 +1409,23 @@
         [
           49
         ]
+      ],
+      [
+        12,
+        [
+          49
+        ]
       ]
     ],
     "thousands": [
       [
         1,
+        [
+          50
+        ]
+      ],
+      [
+        12,
         [
           50
         ]
@@ -806,11 +1469,55 @@
         [
           18
         ]
+      ],
+      [
+        12,
+        [
+          51
+        ]
+      ],
+      [
+        13,
+        [
+          17,
+          33
+        ]
+      ],
+      [
+        16,
+        [
+          5
+        ]
+      ],
+      [
+        18,
+        [
+          10,
+          26
+        ]
+      ],
+      [
+        20,
+        [
+          5
+        ]
+      ],
+      [
+        21,
+        [
+          18
+        ]
       ]
     ],
     "third": [
       [
         1,
+        [
+          52
+        ]
+      ],
+      [
+        12,
         [
           52
         ]
@@ -822,6 +1529,12 @@
         [
           53
         ]
+      ],
+      [
+        12,
+        [
+          53
+        ]
       ]
     ],
     "packages": [
@@ -830,11 +1543,24 @@
         [
           54
         ]
+      ],
+      [
+        12,
+        [
+          54
+        ]
       ]
     ],
     "fastapi": [
       [
         2,
+        [
+          0,
+          30
+        ]
+      ],
+      [
+        13,
         [
           0,
           30
@@ -872,11 +1598,48 @@
         [
           46
         ]
+      ],
+      [
+        13,
+        [
+          3,
+          54
+        ]
+      ],
+      [
+        14,
+        [
+          49
+        ]
+      ],
+      [
+        18,
+        [
+          52
+        ]
+      ],
+      [
+        20,
+        [
+          17
+        ]
+      ],
+      [
+        21,
+        [
+          46
+        ]
       ]
     ],
     "fast": [
       [
         2,
+        [
+          4
+        ]
+      ],
+      [
+        13,
         [
           4
         ]
@@ -908,11 +1671,43 @@
         [
           11
         ]
+      ],
+      [
+        13,
+        [
+          5,
+          55
+        ]
+      ],
+      [
+        17,
+        [
+          10
+        ]
+      ],
+      [
+        20,
+        [
+          7,
+          53
+        ]
+      ],
+      [
+        21,
+        [
+          11
+        ]
       ]
     ],
     "framework": [
       [
         2,
+        [
+          6
+        ]
+      ],
+      [
+        13,
         [
           6
         ]
@@ -937,6 +1732,25 @@
         [
           38
         ]
+      ],
+      [
+        13,
+        [
+          8,
+          49
+        ]
+      ],
+      [
+        15,
+        [
+          44
+        ]
+      ],
+      [
+        20,
+        [
+          38
+        ]
       ]
     ],
     "apis": [
@@ -949,6 +1763,20 @@
       ],
       [
         6,
+        [
+          13,
+          51
+        ]
+      ],
+      [
+        13,
+        [
+          9,
+          51
+        ]
+      ],
+      [
+        17,
         [
           13,
           51
@@ -980,6 +1808,31 @@
           15,
           28
         ]
+      ],
+      [
+        13,
+        [
+          10
+        ]
+      ],
+      [
+        15,
+        [
+          20
+        ]
+      ],
+      [
+        18,
+        [
+          20
+        ]
+      ],
+      [
+        19,
+        [
+          15,
+          28
+        ]
       ]
     ],
     "s": [
@@ -989,11 +1842,24 @@
           13,
           46
         ]
+      ],
+      [
+        13,
+        [
+          13,
+          46
+        ]
       ]
     ],
     "built": [
       [
         2,
+        [
+          14
+        ]
+      ],
+      [
+        13,
         [
           14
         ]
@@ -1023,11 +1889,41 @@
         [
           3
         ]
+      ],
+      [
+        13,
+        [
+          15
+        ]
+      ],
+      [
+        17,
+        [
+          24
+        ]
+      ],
+      [
+        20,
+        [
+          12
+        ]
+      ],
+      [
+        21,
+        [
+          3
+        ]
       ]
     ],
     "top": [
       [
         2,
+        [
+          16
+        ]
+      ],
+      [
+        13,
         [
           16
         ]
@@ -1039,11 +1935,23 @@
         [
           18
         ]
+      ],
+      [
+        13,
+        [
+          18
+        ]
       ]
     ],
     "pydantic": [
       [
         2,
+        [
+          20
+        ]
+      ],
+      [
+        13,
         [
           20
         ]
@@ -1055,11 +1963,23 @@
         [
           21
         ]
+      ],
+      [
+        13,
+        [
+          21
+        ]
       ]
     ],
     "automatic": [
       [
         2,
+        [
+          22
+        ]
+      ],
+      [
+        13,
         [
           22
         ]
@@ -1077,6 +1997,18 @@
         [
           40
         ]
+      ],
+      [
+        13,
+        [
+          23
+        ]
+      ],
+      [
+        17,
+        [
+          40
+        ]
       ]
     ],
     "documentation": [
@@ -1091,6 +2023,18 @@
         [
           50
         ]
+      ],
+      [
+        13,
+        [
+          24
+        ]
+      ],
+      [
+        17,
+        [
+          50
+        ]
       ]
     ],
     "type": [
@@ -1099,11 +2043,23 @@
         [
           25
         ]
+      ],
+      [
+        13,
+        [
+          25
+        ]
       ]
     ],
     "validation": [
       [
         2,
+        [
+          26
+        ]
+      ],
+      [
+        13,
         [
           26
         ]
@@ -1121,6 +2077,18 @@
         [
           26
         ]
+      ],
+      [
+        13,
+        [
+          28
+        ]
+      ],
+      [
+        20,
+        [
+          26
+        ]
       ]
     ],
     "support": [
@@ -1135,11 +2103,29 @@
         [
           42
         ]
+      ],
+      [
+        13,
+        [
+          29
+        ]
+      ],
+      [
+        16,
+        [
+          42
+        ]
       ]
     ],
     "one": [
       [
         2,
+        [
+          32
+        ]
+      ],
+      [
+        13,
         [
           32
         ]
@@ -1176,11 +2162,48 @@
         [
           8
         ]
+      ],
+      [
+        13,
+        [
+          34
+        ]
+      ],
+      [
+        14,
+        [
+          11
+        ]
+      ],
+      [
+        15,
+        [
+          15
+        ]
+      ],
+      [
+        20,
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        21,
+        [
+          8
+        ]
       ]
     ],
     "fastest": [
       [
         2,
+        [
+          35
+        ]
+      ],
+      [
+        13,
         [
           35
         ]
@@ -1198,6 +2221,18 @@
         [
           31
         ]
+      ],
+      [
+        13,
+        [
+          37
+        ]
+      ],
+      [
+        20,
+        [
+          31
+        ]
       ]
     ],
     "available": [
@@ -1206,11 +2241,23 @@
         [
           38
         ]
+      ],
+      [
+        13,
+        [
+          38
+        ]
       ]
     ],
     "comparable": [
       [
         2,
+        [
+          39
+        ]
+      ],
+      [
+        13,
         [
           39
         ]
@@ -1243,6 +2290,33 @@
         [
           21
         ]
+      ],
+      [
+        13,
+        [
+          40
+        ]
+      ],
+      [
+        14,
+        [
+          5,
+          20,
+          43
+        ]
+      ],
+      [
+        16,
+        [
+          11,
+          56
+        ]
+      ],
+      [
+        17,
+        [
+          21
+        ]
       ]
     ],
     "node": [
@@ -1254,6 +2328,18 @@
       ],
       [
         9,
+        [
+          15
+        ]
+      ],
+      [
+        13,
+        [
+          41
+        ]
+      ],
+      [
+        20,
         [
           15
         ]
@@ -1271,6 +2357,18 @@
         [
           16
         ]
+      ],
+      [
+        13,
+        [
+          42
+        ]
+      ],
+      [
+        20,
+        [
+          16
+        ]
       ]
     ],
     "go": [
@@ -1279,11 +2377,23 @@
         [
           44
         ]
+      ],
+      [
+        13,
+        [
+          44
+        ]
       ]
     ],
     "perfect": [
       [
         2,
+        [
+          47
+        ]
+      ],
+      [
+        13,
         [
           47
         ]
@@ -1301,6 +2411,18 @@
         [
           0
         ]
+      ],
+      [
+        13,
+        [
+          50
+        ]
+      ],
+      [
+        17,
+        [
+          0
+        ]
       ]
     ],
     "microservices": [
@@ -1312,6 +2434,18 @@
       ],
       [
         8,
+        [
+          41
+        ]
+      ],
+      [
+        13,
+        [
+          52
+        ]
+      ],
+      [
+        19,
         [
           41
         ]
@@ -1337,6 +2471,26 @@
           14,
           49
         ]
+      ],
+      [
+        13,
+        [
+          56
+        ]
+      ],
+      [
+        15,
+        [
+          9
+        ]
+      ],
+      [
+        19,
+        [
+          9,
+          14,
+          49
+        ]
       ]
     ],
     "search": [
@@ -1347,11 +2501,26 @@
           50,
           61
         ]
+      ],
+      [
+        14,
+        [
+          0,
+          50,
+          61
+        ]
       ]
     ],
     "engines": [
       [
         3,
+        [
+          1,
+          51
+        ]
+      ],
+      [
+        14,
         [
           1,
           51
@@ -1371,11 +2540,30 @@
         [
           14
         ]
+      ],
+      [
+        14,
+        [
+          2,
+          53
+        ]
+      ],
+      [
+        17,
+        [
+          14
+        ]
       ]
     ],
     "sophisticated": [
       [
         3,
+        [
+          3
+        ]
+      ],
+      [
+        14,
         [
           3
         ]
@@ -1394,11 +2582,30 @@
         [
           33
         ]
+      ],
+      [
+        14,
+        [
+          4,
+          24
+        ]
+      ],
+      [
+        16,
+        [
+          33
+        ]
       ]
     ],
     "find": [
       [
         3,
+        [
+          6
+        ]
+      ],
+      [
+        14,
         [
           6
         ]
@@ -1410,11 +2617,23 @@
         [
           8
         ]
+      ],
+      [
+        14,
+        [
+          8
+        ]
       ]
     ],
     "relevant": [
       [
         3,
+        [
+          9
+        ]
+      ],
+      [
+        14,
         [
           9
         ]
@@ -1427,11 +2646,24 @@
           10,
           21
         ]
+      ],
+      [
+        14,
+        [
+          10,
+          21
+        ]
       ]
     ],
     "core": [
       [
         3,
+        [
+          12
+        ]
+      ],
+      [
+        14,
         [
           12
         ]
@@ -1452,6 +2684,24 @@
       ],
       [
         7,
+        [
+          29
+        ]
+      ],
+      [
+        14,
+        [
+          13
+        ]
+      ],
+      [
+        15,
+        [
+          24
+        ]
+      ],
+      [
+        18,
         [
           29
         ]
@@ -1500,11 +2750,60 @@
         [
           53
         ]
+      ],
+      [
+        14,
+        [
+          14
+        ]
+      ],
+      [
+        15,
+        [
+          25
+        ]
+      ],
+      [
+        16,
+        [
+          21,
+          34
+        ]
+      ],
+      [
+        17,
+        [
+          31
+        ]
+      ],
+      [
+        18,
+        [
+          30
+        ]
+      ],
+      [
+        20,
+        [
+          32
+        ]
+      ],
+      [
+        21,
+        [
+          53
+        ]
       ]
     ],
     "inverted": [
       [
         3,
+        [
+          15
+        ]
+      ],
+      [
+        14,
         [
           15
         ]
@@ -1516,11 +2815,23 @@
         [
           16
         ]
+      ],
+      [
+        14,
+        [
+          16
+        ]
       ]
     ],
     "which": [
       [
         3,
+        [
+          17
+        ]
+      ],
+      [
+        14,
         [
           17
         ]
@@ -1532,6 +2843,12 @@
         [
           18
         ]
+      ],
+      [
+        14,
+        [
+          18
+        ]
       ]
     ],
     "words": [
@@ -1540,11 +2857,23 @@
         [
           19
         ]
+      ],
+      [
+        14,
+        [
+          19
+        ]
       ]
     ],
     "ranking": [
       [
         3,
+        [
+          23
+        ]
+      ],
+      [
+        14,
         [
           23
         ]
@@ -1574,11 +2903,42 @@
         [
           22
         ]
+      ],
+      [
+        14,
+        [
+          25
+        ]
+      ],
+      [
+        16,
+        [
+          47
+        ]
+      ],
+      [
+        18,
+        [
+          38
+        ]
+      ],
+      [
+        20,
+        [
+          22
+        ]
       ]
     ],
     "tf": [
       [
         3,
+        [
+          26,
+          30
+        ]
+      ],
+      [
+        14,
         [
           26,
           30
@@ -1592,6 +2952,13 @@
           27,
           31
         ]
+      ],
+      [
+        14,
+        [
+          27,
+          31
+        ]
       ]
     ],
     "bm25": [
@@ -1600,11 +2967,23 @@
         [
           29
         ]
+      ],
+      [
+        14,
+        [
+          29
+        ]
       ]
     ],
     "term": [
       [
         3,
+        [
+          32
+        ]
+      ],
+      [
+        14,
         [
           32
         ]
@@ -1617,11 +2996,24 @@
           33,
           36
         ]
+      ],
+      [
+        14,
+        [
+          33,
+          36
+        ]
       ]
     ],
     "inverse": [
       [
         3,
+        [
+          34
+        ]
+      ],
+      [
+        14,
         [
           34
         ]
@@ -1634,6 +3026,13 @@
           35,
           45
         ]
+      ],
+      [
+        14,
+        [
+          35,
+          45
+        ]
       ]
     ],
     "measures": [
@@ -1642,11 +3041,23 @@
         [
           37
         ]
+      ],
+      [
+        14,
+        [
+          37
+        ]
       ]
     ],
     "how": [
       [
         3,
+        [
+          38
+        ]
+      ],
+      [
+        14,
         [
           38
         ]
@@ -1664,11 +3075,29 @@
         [
           44
         ]
+      ],
+      [
+        14,
+        [
+          39
+        ]
+      ],
+      [
+        21,
+        [
+          44
+        ]
       ]
     ],
     "word": [
       [
         3,
+        [
+          41
+        ]
+      ],
+      [
+        14,
         [
           41
         ]
@@ -1680,11 +3109,23 @@
         [
           48
         ]
+      ],
+      [
+        14,
+        [
+          48
+        ]
       ]
     ],
     "also": [
       [
         3,
+        [
+          52
+        ]
+      ],
+      [
+        14,
         [
           52
         ]
@@ -1699,6 +3140,18 @@
       ],
       [
         5,
+        [
+          0
+        ]
+      ],
+      [
+        14,
+        [
+          54
+        ]
+      ],
+      [
+        16,
         [
           0
         ]
@@ -1719,6 +3172,21 @@
           27,
           31
         ]
+      ],
+      [
+        14,
+        [
+          55
+        ]
+      ],
+      [
+        16,
+        [
+          1,
+          23,
+          27,
+          31
+        ]
       ]
     ],
     "vector": [
@@ -1733,11 +3201,29 @@
         [
           43
         ]
+      ],
+      [
+        14,
+        [
+          57
+        ]
+      ],
+      [
+        16,
+        [
+          43
+        ]
       ]
     ],
     "embeddings": [
       [
         3,
+        [
+          58
+        ]
+      ],
+      [
+        14,
         [
           58
         ]
@@ -1749,11 +3235,23 @@
         [
           60
         ]
+      ],
+      [
+        14,
+        [
+          60
+        ]
       ]
     ],
     "capabilities": [
       [
         3,
+        [
+          62
+        ]
+      ],
+      [
+        14,
         [
           62
         ]
@@ -1772,6 +3270,19 @@
         [
           30
         ]
+      ],
+      [
+        15,
+        [
+          0,
+          22
+        ]
+      ],
+      [
+        21,
+        [
+          30
+        ]
       ]
     ],
     "are": [
@@ -1785,6 +3296,12 @@
         11,
         [
           4
+        ]
+      ],
+      [
+        15,
+        [
+          1
         ]
       ]
     ],
@@ -1800,6 +3317,18 @@
         [
           50
         ]
+      ],
+      [
+        15,
+        [
+          2
+        ]
+      ],
+      [
+        18,
+        [
+          50
+        ]
       ]
     ],
     "storing": [
@@ -1808,11 +3337,23 @@
         [
           4
         ]
+      ],
+      [
+        15,
+        [
+          4
+        ]
       ]
     ],
     "retrieving": [
       [
         4,
+        [
+          6
+        ]
+      ],
+      [
+        15,
         [
           6
         ]
@@ -1830,6 +3371,18 @@
         [
           14
         ]
+      ],
+      [
+        15,
+        [
+          7
+        ]
+      ],
+      [
+        16,
+        [
+          14
+        ]
       ]
     ],
     "sql": [
@@ -1838,11 +3391,23 @@
         [
           10
         ]
+      ],
+      [
+        15,
+        [
+          10
+        ]
       ]
     ],
     "structured": [
       [
         4,
+        [
+          11
+        ]
+      ],
+      [
+        15,
         [
           11
         ]
@@ -1855,6 +3420,13 @@
           12,
           39
         ]
+      ],
+      [
+        15,
+        [
+          12,
+          39
+        ]
       ]
     ],
     "interacting": [
@@ -1863,11 +3435,23 @@
         [
           19
         ]
+      ],
+      [
+        15,
+        [
+          19
+        ]
       ]
     ],
     "relational": [
       [
         4,
+        [
+          21
+        ]
+      ],
+      [
+        15,
         [
           21
         ]
@@ -1891,11 +3475,35 @@
         [
           28
         ]
+      ],
+      [
+        15,
+        [
+          23
+        ]
+      ],
+      [
+        17,
+        [
+          29
+        ]
+      ],
+      [
+        18,
+        [
+          28
+        ]
       ]
     ],
     "tables": [
       [
         4,
+        [
+          26
+        ]
+      ],
+      [
+        15,
         [
           26
         ]
@@ -1907,6 +3515,12 @@
         [
           27
         ]
+      ],
+      [
+        15,
+        [
+          27
+        ]
       ]
     ],
     "columns": [
@@ -1915,11 +3529,23 @@
         [
           28
         ]
+      ],
+      [
+        15,
+        [
+          28
+        ]
       ]
     ],
     "primary": [
       [
         4,
+        [
+          29
+        ]
+      ],
+      [
+        15,
         [
           29
         ]
@@ -1932,6 +3558,13 @@
           30,
           32
         ]
+      ],
+      [
+        15,
+        [
+          30,
+          32
+        ]
       ]
     ],
     "foreign": [
@@ -1940,11 +3573,23 @@
         [
           31
         ]
+      ],
+      [
+        15,
+        [
+          31
+        ]
       ]
     ],
     "relationships": [
       [
         4,
+        [
+          34
+        ]
+      ],
+      [
+        15,
         [
           34
         ]
@@ -1974,6 +3619,30 @@
         [
           36
         ]
+      ],
+      [
+        15,
+        [
+          35
+        ]
+      ],
+      [
+        18,
+        [
+          47
+        ]
+      ],
+      [
+        20,
+        [
+          42
+        ]
+      ],
+      [
+        21,
+        [
+          36
+        ]
       ]
     ],
     "normalization": [
@@ -1982,11 +3651,23 @@
         [
           36
         ]
+      ],
+      [
+        15,
+        [
+          36
+        ]
       ]
     ],
     "indexing": [
       [
         4,
+        [
+          37
+        ]
+      ],
+      [
+        15,
         [
           37
         ]
@@ -2004,6 +3685,18 @@
         [
           42
         ]
+      ],
+      [
+        15,
+        [
+          40
+        ]
+      ],
+      [
+        21,
+        [
+          42
+        ]
       ]
     ],
     "crucial": [
@@ -2018,11 +3711,29 @@
         [
           51
         ]
+      ],
+      [
+        15,
+        [
+          42
+        ]
+      ],
+      [
+        20,
+        [
+          51
+        ]
       ]
     ],
     "efficient": [
       [
         4,
+        [
+          45
+        ]
+      ],
+      [
+        15,
         [
           45
         ]
@@ -2034,11 +3745,23 @@
         [
           46
         ]
+      ],
+      [
+        15,
+        [
+          46
+        ]
       ]
     ],
     "systems": [
       [
         4,
+        [
+          47
+        ]
+      ],
+      [
+        15,
         [
           47
         ]
@@ -2050,6 +3773,12 @@
         [
           4
         ]
+      ],
+      [
+        16,
+        [
+          4
+        ]
       ]
     ],
     "artificial": [
@@ -2058,11 +3787,23 @@
         [
           6
         ]
+      ],
+      [
+        16,
+        [
+          6
+        ]
       ]
     ],
     "intelligence": [
       [
         5,
+        [
+          7
+        ]
+      ],
+      [
+        16,
         [
           7
         ]
@@ -2080,11 +3821,29 @@
         [
           40
         ]
+      ],
+      [
+        16,
+        [
+          9
+        ]
+      ],
+      [
+        19,
+        [
+          40
+        ]
       ]
     ],
     "computers": [
       [
         5,
+        [
+          10
+        ]
+      ],
+      [
+        16,
         [
           10
         ]
@@ -2097,11 +3856,24 @@
           12,
           49
         ]
+      ],
+      [
+        16,
+        [
+          12,
+          49
+        ]
       ]
     ],
     "from": [
       [
         5,
+        [
+          13
+        ]
+      ],
+      [
+        16,
         [
           13
         ]
@@ -2113,11 +3885,23 @@
         [
           15
         ]
+      ],
+      [
+        16,
+        [
+          15
+        ]
       ]
     ],
     "being": [
       [
         5,
+        [
+          16
+        ]
+      ],
+      [
+        16,
         [
           16
         ]
@@ -2129,11 +3913,23 @@
         [
           17
         ]
+      ],
+      [
+        16,
+        [
+          17
+        ]
       ]
     ],
     "programmed": [
       [
         5,
+        [
+          18
+        ]
+      ],
+      [
+        16,
         [
           18
         ]
@@ -2145,11 +3941,23 @@
         [
           19
         ]
+      ],
+      [
+        16,
+        [
+          19
+        ]
       ]
     ],
     "types": [
       [
         5,
+        [
+          20
+        ]
+      ],
+      [
+        16,
         [
           20
         ]
@@ -2161,11 +3969,23 @@
         [
           22
         ]
+      ],
+      [
+        16,
+        [
+          22
+        ]
       ]
     ],
     "classification": [
       [
         5,
+        [
+          24
+        ]
+      ],
+      [
+        16,
         [
           24
         ]
@@ -2178,11 +3998,24 @@
           25,
           36
         ]
+      ],
+      [
+        16,
+        [
+          25,
+          36
+        ]
       ]
     ],
     "unsupervised": [
       [
         5,
+        [
+          26
+        ]
+      ],
+      [
+        16,
         [
           26
         ]
@@ -2194,11 +4027,23 @@
         [
           28
         ]
+      ],
+      [
+        16,
+        [
+          28
+        ]
       ]
     ],
     "reinforcement": [
       [
         5,
+        [
+          30
+        ]
+      ],
+      [
+        16,
         [
           30
         ]
@@ -2216,11 +4061,29 @@
         [
           30
         ]
+      ],
+      [
+        16,
+        [
+          32
+        ]
+      ],
+      [
+        20,
+        [
+          30
+        ]
       ]
     ],
     "linear": [
       [
         5,
+        [
+          35
+        ]
+      ],
+      [
+        16,
         [
           35
         ]
@@ -2232,11 +4095,23 @@
         [
           37
         ]
+      ],
+      [
+        16,
+        [
+          37
+        ]
       ]
     ],
     "trees": [
       [
         5,
+        [
+          38
+        ]
+      ],
+      [
+        16,
         [
           38
         ]
@@ -2248,11 +4123,23 @@
         [
           39
         ]
+      ],
+      [
+        16,
+        [
+          39
+        ]
       ]
     ],
     "networks": [
       [
         5,
+        [
+          40
+        ]
+      ],
+      [
+        16,
         [
           40
         ]
@@ -2264,11 +4151,23 @@
         [
           44
         ]
+      ],
+      [
+        16,
+        [
+          44
+        ]
       ]
     ],
     "libraries": [
       [
         5,
+        [
+          46
+        ]
+      ],
+      [
+        16,
         [
           46
         ]
@@ -2280,11 +4179,23 @@
         [
           48
         ]
+      ],
+      [
+        16,
+        [
+          48
+        ]
       ]
     ],
     "tensorflow": [
       [
         5,
+        [
+          50
+        ]
+      ],
+      [
+        16,
         [
           50
         ]
@@ -2296,11 +4207,23 @@
         [
           52
         ]
+      ],
+      [
+        16,
+        [
+          52
+        ]
       ]
     ],
     "make": [
       [
         5,
+        [
+          53
+        ]
+      ],
+      [
+        16,
         [
           53
         ]
@@ -2312,11 +4235,23 @@
         [
           55
         ]
+      ],
+      [
+        16,
+        [
+          55
+        ]
       ]
     ],
     "implement": [
       [
         5,
+        [
+          57
+        ]
+      ],
+      [
+        16,
         [
           57
         ]
@@ -2328,11 +4263,23 @@
         [
           58
         ]
+      ],
+      [
+        16,
+        [
+          58
+        ]
       ]
     ],
     "models": [
       [
         5,
+        [
+          59
+        ]
+      ],
+      [
+        16,
         [
           59
         ]
@@ -2344,11 +4291,23 @@
         [
           1
         ]
+      ],
+      [
+        17,
+        [
+          1
+        ]
       ]
     ],
     "state": [
       [
         6,
+        [
+          2
+        ]
+      ],
+      [
+        17,
         [
           2
         ]
@@ -2360,11 +4319,23 @@
         [
           3
         ]
+      ],
+      [
+        17,
+        [
+          3
+        ]
       ]
     ],
     "architectural": [
       [
         6,
+        [
+          6
+        ]
+      ],
+      [
+        17,
         [
           6
         ]
@@ -2376,11 +4347,23 @@
         [
           7
         ]
+      ],
+      [
+        17,
+        [
+          7
+        ]
       ]
     ],
     "designing": [
       [
         6,
+        [
+          9
+        ]
+      ],
+      [
+        17,
         [
           9
         ]
@@ -2399,11 +4382,30 @@
           12,
           19
         ]
+      ],
+      [
+        17,
+        [
+          11
+        ]
+      ],
+      [
+        21,
+        [
+          12,
+          19
+        ]
       ]
     ],
     "restful": [
       [
         6,
+        [
+          12
+        ]
+      ],
+      [
+        17,
         [
           12
         ]
@@ -2415,11 +4417,23 @@
         [
           15
         ]
+      ],
+      [
+        17,
+        [
+          15
+        ]
       ]
     ],
     "methods": [
       [
         6,
+        [
+          16
+        ]
+      ],
+      [
+        17,
         [
           16
         ]
@@ -2431,11 +4445,23 @@
         [
           17
         ]
+      ],
+      [
+        17,
+        [
+          17
+        ]
       ]
     ],
     "post": [
       [
         6,
+        [
+          18
+        ]
+      ],
+      [
+        17,
         [
           18
         ]
@@ -2447,11 +4473,23 @@
         [
           19
         ]
+      ],
+      [
+        17,
+        [
+          19
+        ]
       ]
     ],
     "delete": [
       [
         6,
+        [
+          20
+        ]
+      ],
+      [
+        17,
         [
           20
         ]
@@ -2463,11 +4501,23 @@
         [
           22
         ]
+      ],
+      [
+        17,
+        [
+          22
+        ]
       ]
     ],
     "operations": [
       [
         6,
+        [
+          23
+        ]
+      ],
+      [
+        17,
         [
           23
         ]
@@ -2485,11 +4535,29 @@
         [
           6
         ]
+      ],
+      [
+        17,
+        [
+          25
+        ]
+      ],
+      [
+        21,
+        [
+          6
+        ]
       ]
     ],
     "identified": [
       [
         6,
+        [
+          26
+        ]
+      ],
+      [
+        17,
         [
           26
         ]
@@ -2502,11 +4570,24 @@
           28,
           38
         ]
+      ],
+      [
+        17,
+        [
+          28,
+          38
+        ]
       ]
     ],
     "principles": [
       [
         6,
+        [
+          30
+        ]
+      ],
+      [
+        17,
         [
           30
         ]
@@ -2518,11 +4599,23 @@
         [
           32
         ]
+      ],
+      [
+        17,
+        [
+          32
+        ]
       ]
     ],
     "uniform": [
       [
         6,
+        [
+          33
+        ]
+      ],
+      [
+        17,
         [
           33
         ]
@@ -2534,11 +4627,23 @@
         [
           34
         ]
+      ],
+      [
+        17,
+        [
+          34
+        ]
       ]
     ],
     "resource": [
       [
         6,
+        [
+          36
+        ]
+      ],
+      [
+        17,
         [
           36
         ]
@@ -2550,6 +4655,12 @@
         [
           37
         ]
+      ],
+      [
+        17,
+        [
+          37
+        ]
       ]
     ],
     "good": [
@@ -2558,11 +4669,23 @@
         [
           39
         ]
+      ],
+      [
+        17,
+        [
+          39
+        ]
       ]
     ],
     "design": [
       [
         6,
+        [
+          41
+        ]
+      ],
+      [
+        17,
         [
           41
         ]
@@ -2580,11 +4703,29 @@
         [
           19
         ]
+      ],
+      [
+        17,
+        [
+          42
+        ]
+      ],
+      [
+        20,
+        [
+          19
+        ]
       ]
     ],
     "proper": [
       [
         6,
+        [
+          43
+        ]
+      ],
+      [
+        17,
         [
           43
         ]
@@ -2596,11 +4737,23 @@
         [
           44
         ]
+      ],
+      [
+        17,
+        [
+          44
+        ]
       ]
     ],
     "codes": [
       [
         6,
+        [
+          45
+        ]
+      ],
+      [
+        17,
         [
           45
         ]
@@ -2612,11 +4765,23 @@
         [
           46
         ]
+      ],
+      [
+        17,
+        [
+          46
+        ]
       ]
     ],
     "handling": [
       [
         6,
+        [
+          47
+        ]
+      ],
+      [
+        17,
         [
           47
         ]
@@ -2628,11 +4793,23 @@
         [
           48
         ]
+      ],
+      [
+        17,
+        [
+          48
+        ]
       ]
     ],
     "should": [
       [
         6,
+        [
+          52
+        ]
+      ],
+      [
+        17,
         [
           52
         ]
@@ -2644,11 +4821,23 @@
         [
           53
         ]
+      ],
+      [
+        17,
+        [
+          53
+        ]
       ]
     ],
     "intuitive": [
       [
         6,
+        [
+          54
+        ]
+      ],
+      [
+        17,
         [
           54
         ]
@@ -2660,11 +4849,23 @@
         [
           55
         ]
+      ],
+      [
+        17,
+        [
+          55
+        ]
       ]
     ],
     "follow": [
       [
         6,
+        [
+          57
+        ]
+      ],
+      [
+        17,
         [
           57
         ]
@@ -2676,6 +4877,12 @@
         [
           58
         ]
+      ],
+      [
+        17,
+        [
+          58
+        ]
       ]
     ],
     "best": [
@@ -2684,11 +4891,23 @@
         [
           59
         ]
+      ],
+      [
+        17,
+        [
+          59
+        ]
       ]
     ],
     "practices": [
       [
         6,
+        [
+          60
+        ]
+      ],
+      [
+        17,
         [
           60
         ]
@@ -2701,11 +4920,24 @@
           0,
           48
         ]
+      ],
+      [
+        18,
+        [
+          0,
+          48
+        ]
       ]
     ],
     "distributed": [
       [
         7,
+        [
+          3
+        ]
+      ],
+      [
+        18,
         [
           3
         ]
@@ -2717,11 +4949,23 @@
         [
           4
         ]
+      ],
+      [
+        18,
+        [
+          4
+        ]
       ]
     ],
     "control": [
       [
         7,
+        [
+          5
+        ]
+      ],
+      [
+        18,
         [
           5
         ]
@@ -2733,11 +4977,23 @@
         [
           6
         ]
+      ],
+      [
+        18,
+        [
+          6
+        ]
       ]
     ],
     "used": [
       [
         7,
+        [
+          7
+        ]
+      ],
+      [
+        18,
         [
           7
         ]
@@ -2749,6 +5005,12 @@
         [
           9
         ]
+      ],
+      [
+        18,
+        [
+          9
+        ]
       ]
     ],
     "developers": [
@@ -2757,11 +5019,23 @@
         [
           11
         ]
+      ],
+      [
+        18,
+        [
+          11
+        ]
       ]
     ],
     "worldwide": [
       [
         7,
+        [
+          12
+        ]
+      ],
+      [
+        18,
         [
           12
         ]
@@ -2779,11 +5053,29 @@
         [
           45
         ]
+      ],
+      [
+        18,
+        [
+          14
+        ]
+      ],
+      [
+        19,
+        [
+          45
+        ]
       ]
     ],
     "tracking": [
       [
         7,
+        [
+          15
+        ]
+      ],
+      [
+        18,
         [
           15
         ]
@@ -2795,11 +5087,23 @@
         [
           16
         ]
+      ],
+      [
+        18,
+        [
+          16
+        ]
       ]
     ],
     "code": [
       [
         7,
+        [
+          18
+        ]
+      ],
+      [
+        18,
         [
           18
         ]
@@ -2811,11 +5115,23 @@
         [
           19
         ]
+      ],
+      [
+        18,
+        [
+          19
+        ]
       ]
     ],
     "teams": [
       [
         7,
+        [
+          21
+        ]
+      ],
+      [
+        18,
         [
           21
         ]
@@ -2833,6 +5149,18 @@
         [
           46
         ]
+      ],
+      [
+        18,
+        [
+          23
+        ]
+      ],
+      [
+        19,
+        [
+          46
+        ]
       ]
     ],
     "different": [
@@ -2847,11 +5175,29 @@
         [
           21
         ]
+      ],
+      [
+        18,
+        [
+          24
+        ]
+      ],
+      [
+        19,
+        [
+          21
+        ]
       ]
     ],
     "versions": [
       [
         7,
+        [
+          25
+        ]
+      ],
+      [
+        18,
         [
           25
         ]
@@ -2863,11 +5209,23 @@
         [
           27
         ]
+      ],
+      [
+        18,
+        [
+          27
+        ]
       ]
     ],
     "repositories": [
       [
         7,
+        [
+          31
+        ]
+      ],
+      [
+        18,
         [
           31
         ]
@@ -2879,11 +5237,23 @@
         [
           32
         ]
+      ],
+      [
+        18,
+        [
+          32
+        ]
       ]
     ],
     "branches": [
       [
         7,
+        [
+          33
+        ]
+      ],
+      [
+        18,
         [
           33
         ]
@@ -2895,11 +5265,23 @@
         [
           34
         ]
+      ],
+      [
+        18,
+        [
+          34
+        ]
       ]
     ],
     "remotes": [
       [
         7,
+        [
+          36
+        ]
+      ],
+      [
+        18,
         [
           36
         ]
@@ -2911,11 +5293,23 @@
         [
           37
         ]
+      ],
+      [
+        18,
+        [
+          37
+        ]
       ]
     ],
     "github": [
       [
         7,
+        [
+          39
+        ]
+      ],
+      [
+        18,
         [
           39
         ]
@@ -2927,11 +5321,23 @@
         [
           41
         ]
+      ],
+      [
+        18,
+        [
+          41
+        ]
       ]
     ],
     "provide": [
       [
         7,
+        [
+          42
+        ]
+      ],
+      [
+        18,
         [
           42
         ]
@@ -2943,11 +5349,23 @@
         [
           43
         ]
+      ],
+      [
+        18,
+        [
+          43
+        ]
       ]
     ],
     "collaboration": [
       [
         7,
+        [
+          45
+        ]
+      ],
+      [
+        18,
         [
           45
         ]
@@ -2965,11 +5383,29 @@
         [
           21
         ]
+      ],
+      [
+        18,
+        [
+          46
+        ]
+      ],
+      [
+        20,
+        [
+          21
+        ]
       ]
     ],
     "software": [
       [
         7,
+        [
+          53
+        ]
+      ],
+      [
+        18,
         [
           53
         ]
@@ -2987,6 +5423,18 @@
         [
           54
         ]
+      ],
+      [
+        18,
+        [
+          54
+        ]
+      ],
+      [
+        20,
+        [
+          54
+        ]
       ]
     ],
     "workflows": [
@@ -2995,11 +5443,25 @@
         [
           55
         ]
+      ],
+      [
+        18,
+        [
+          55
+        ]
       ]
     ],
     "docker": [
       [
         8,
+        [
+          0,
+          23,
+          43
+        ]
+      ],
+      [
+        19,
         [
           0,
           23,
@@ -3019,6 +5481,18 @@
         [
           56
         ]
+      ],
+      [
+        19,
+        [
+          3
+        ]
+      ],
+      [
+        21,
+        [
+          56
+        ]
       ]
     ],
     "developing": [
@@ -3027,11 +5501,23 @@
         [
           5
         ]
+      ],
+      [
+        19,
+        [
+          5
+        ]
       ]
     ],
     "shipping": [
       [
         8,
+        [
+          6
+        ]
+      ],
+      [
+        19,
         [
           6
         ]
@@ -3049,11 +5535,31 @@
         [
           8
         ]
+      ],
+      [
+        19,
+        [
+          8
+        ]
+      ],
+      [
+        20,
+        [
+          8
+        ]
       ]
     ],
     "containers": [
       [
         8,
+        [
+          11,
+          12,
+          27
+        ]
+      ],
+      [
+        19,
         [
           11,
           12,
@@ -3067,11 +5573,23 @@
         [
           13
         ]
+      ],
+      [
+        19,
+        [
+          13
+        ]
       ]
     ],
     "their": [
       [
         8,
+        [
+          16
+        ]
+      ],
+      [
+        19,
         [
           16
         ]
@@ -3083,11 +5601,23 @@
         [
           17
         ]
+      ],
+      [
+        19,
+        [
+          17
+        ]
       ]
     ],
     "ensuring": [
       [
         8,
+        [
+          18
+        ]
+      ],
+      [
+        19,
         [
           18
         ]
@@ -3099,11 +5629,23 @@
         [
           19
         ]
+      ],
+      [
+        19,
+        [
+          19
+        ]
       ]
     ],
     "across": [
       [
         8,
+        [
+          20
+        ]
+      ],
+      [
+        19,
         [
           20
         ]
@@ -3115,11 +5657,23 @@
         [
           22
         ]
+      ],
+      [
+        19,
+        [
+          22
+        ]
       ]
     ],
     "uses": [
       [
         8,
+        [
+          24
+        ]
+      ],
+      [
+        19,
         [
           24
         ]
@@ -3131,11 +5685,23 @@
         [
           25
         ]
+      ],
+      [
+        19,
+        [
+          25
+        ]
       ]
     ],
     "dockerfile": [
       [
         8,
+        [
+          29
+        ]
+      ],
+      [
+        19,
         [
           29
         ]
@@ -3147,11 +5713,23 @@
         [
           31
         ]
+      ],
+      [
+        19,
+        [
+          31
+        ]
       ]
     ],
     "image": [
       [
         8,
+        [
+          32
+        ]
+      ],
+      [
+        19,
         [
           32
         ]
@@ -3163,6 +5741,12 @@
         [
           33
         ]
+      ],
+      [
+        19,
+        [
+          33
+        ]
       ]
     ],
     "containerization": [
@@ -3171,11 +5755,23 @@
         [
           34
         ]
+      ],
+      [
+        19,
+        [
+          34
+        ]
       ]
     ],
     "simplifies": [
       [
         8,
+        [
+          35
+        ]
+      ],
+      [
+        19,
         [
           35
         ]
@@ -3193,11 +5789,29 @@
         [
           48
         ]
+      ],
+      [
+        19,
+        [
+          36
+        ]
+      ],
+      [
+        21,
+        [
+          48
+        ]
       ]
     ],
     "improves": [
       [
         8,
+        [
+          37
+        ]
+      ],
+      [
+        19,
         [
           37
         ]
@@ -3215,6 +5829,18 @@
         [
           39
         ]
+      ],
+      [
+        19,
+        [
+          38
+        ]
+      ],
+      [
+        21,
+        [
+          39
+        ]
       ]
     ],
     "architecture": [
@@ -3229,11 +5855,29 @@
         [
           38
         ]
+      ],
+      [
+        19,
+        [
+          42
+        ]
+      ],
+      [
+        21,
+        [
+          38
+        ]
       ]
     ],
     "compose": [
       [
         8,
+        [
+          44
+        ]
+      ],
+      [
+        19,
         [
           44
         ]
@@ -3245,6 +5889,12 @@
         [
           47
         ]
+      ],
+      [
+        19,
+        [
+          47
+        ]
       ]
     ],
     "container": [
@@ -3253,11 +5903,23 @@
         [
           48
         ]
+      ],
+      [
+        19,
+        [
+          48
+        ]
       ]
     ],
     "easily": [
       [
         8,
+        [
+          50
+        ]
+      ],
+      [
+        19,
         [
           50
         ]
@@ -3271,11 +5933,25 @@
           18,
           43
         ]
+      ],
+      [
+        20,
+        [
+          0,
+          18,
+          43
+        ]
       ]
     ],
     "browsers": [
       [
         9,
+        [
+          10
+        ]
+      ],
+      [
+        20,
         [
           10
         ]
@@ -3293,11 +5969,29 @@
         [
           24
         ]
+      ],
+      [
+        20,
+        [
+          13
+        ]
+      ],
+      [
+        21,
+        [
+          24
+        ]
       ]
     ],
     "via": [
       [
         9,
+        [
+          14
+        ]
+      ],
+      [
+        20,
         [
           14
         ]
@@ -3309,11 +6003,23 @@
         [
           20
         ]
+      ],
+      [
+        20,
+        [
+          20
+        ]
       ]
     ],
     "arrow": [
       [
         9,
+        [
+          23
+        ]
+      ],
+      [
+        20,
         [
           23
         ]
@@ -3325,11 +6031,23 @@
         [
           24
         ]
+      ],
+      [
+        20,
+        [
+          24
+        ]
       ]
     ],
     "promises": [
       [
         9,
+        [
+          25
+        ]
+      ],
+      [
+        20,
         [
           25
         ]
@@ -3341,11 +6059,23 @@
         [
           27
         ]
+      ],
+      [
+        20,
+        [
+          27
+        ]
       ]
     ],
     "modules": [
       [
         9,
+        [
+          29
+        ]
+      ],
+      [
+        20,
         [
           29
         ]
@@ -3357,11 +6087,23 @@
         [
           33
         ]
+      ],
+      [
+        20,
+        [
+          33
+        ]
       ]
     ],
     "vue": [
       [
         9,
+        [
+          34
+        ]
+      ],
+      [
+        20,
         [
           34
         ]
@@ -3373,11 +6115,23 @@
         [
           36
         ]
+      ],
+      [
+        20,
+        [
+          36
+        ]
       ]
     ],
     "interactive": [
       [
         9,
+        [
+          39
+        ]
+      ],
+      [
+        20,
         [
           39
         ]
@@ -3389,11 +6143,23 @@
         [
           40
         ]
+      ],
+      [
+        20,
+        [
+          40
+        ]
       ]
     ],
     "interfaces": [
       [
         9,
+        [
+          41
+        ]
+      ],
+      [
+        20,
         [
           41
         ]
@@ -3405,11 +6171,23 @@
         [
           44
         ]
+      ],
+      [
+        20,
+        [
+          44
+        ]
       ]
     ],
     "dom": [
       [
         9,
+        [
+          45
+        ]
+      ],
+      [
+        20,
         [
           45
         ]
@@ -3421,6 +6199,12 @@
         [
           46
         ]
+      ],
+      [
+        20,
+        [
+          46
+        ]
       ]
     ],
     "asynchronous": [
@@ -3429,11 +6213,26 @@
         [
           48
         ]
+      ],
+      [
+        20,
+        [
+          48
+        ]
       ]
     ],
     "cloud": [
       [
         10,
+        [
+          0,
+          37,
+          51,
+          55
+        ]
+      ],
+      [
+        21,
         [
           0,
           37,
@@ -3450,11 +6249,25 @@
           5,
           35
         ]
+      ],
+      [
+        21,
+        [
+          1,
+          5,
+          35
+        ]
       ]
     ],
     "provides": [
       [
         10,
+        [
+          2
+        ]
+      ],
+      [
+        21,
         [
           2
         ]
@@ -3466,11 +6279,23 @@
         [
           4
         ]
+      ],
+      [
+        21,
+        [
+          4
+        ]
       ]
     ],
     "over": [
       [
         10,
+        [
+          7
+        ]
+      ],
+      [
+        21,
         [
           7
         ]
@@ -3482,11 +6307,23 @@
         [
           9
         ]
+      ],
+      [
+        21,
+        [
+          9
+        ]
       ]
     ],
     "amazon": [
       [
         10,
+        [
+          10
+        ]
+      ],
+      [
+        21,
         [
           10
         ]
@@ -3498,11 +6335,23 @@
         [
           13
         ]
+      ],
+      [
+        21,
+        [
+          13
+        ]
       ]
     ],
     "offers": [
       [
         10,
+        [
+          14
+        ]
+      ],
+      [
+        21,
         [
           14
         ]
@@ -3514,11 +6363,23 @@
         [
           16
         ]
+      ],
+      [
+        21,
+        [
+          16
+        ]
       ]
     ],
     "range": [
       [
         10,
+        [
+          17
+        ]
+      ],
+      [
+        21,
         [
           17
         ]
@@ -3530,11 +6391,23 @@
         [
           21
         ]
+      ],
+      [
+        21,
+        [
+          21
+        ]
       ]
     ],
     "virtual": [
       [
         10,
+        [
+          23
+        ]
+      ],
+      [
+        21,
         [
           23
         ]
@@ -3546,11 +6419,23 @@
         [
           25
         ]
+      ],
+      [
+        21,
+        [
+          25
+        ]
       ]
     ],
     "storage": [
       [
         10,
+        [
+          27
+        ]
+      ],
+      [
+        21,
         [
           27
         ]
@@ -3562,11 +6447,23 @@
         [
           28
         ]
+      ],
+      [
+        21,
+        [
+          28
+        ]
       ]
     ],
     "lambda": [
       [
         10,
+        [
+          32
+        ]
+      ],
+      [
+        21,
         [
           32
         ]
@@ -3578,11 +6475,23 @@
         [
           34
         ]
+      ],
+      [
+        21,
+        [
+          34
+        ]
       ]
     ],
     "cost": [
       [
         10,
+        [
+          41
+        ]
+      ],
+      [
+        21,
         [
           41
         ]
@@ -3594,11 +6503,23 @@
         [
           47
         ]
+      ],
+      [
+        21,
+        [
+          47
+        ]
       ]
     ],
     "other": [
       [
         10,
+        [
+          49
+        ]
+      ],
+      [
+        21,
         [
           49
         ]
@@ -3610,11 +6531,23 @@
         [
           50
         ]
+      ],
+      [
+        21,
+        [
+          50
+        ]
       ]
     ],
     "providers": [
       [
         10,
+        [
+          52
+        ]
+      ],
+      [
+        21,
         [
           52
         ]
@@ -3626,6 +6559,12 @@
         [
           54
         ]
+      ],
+      [
+        21,
+        [
+          54
+        ]
       ]
     ],
     "microsoft": [
@@ -3634,11 +6573,23 @@
         [
           58
         ]
+      ],
+      [
+        21,
+        [
+          58
+        ]
       ]
     ],
     "azure": [
       [
         10,
+        [
+          59
+        ]
+      ],
+      [
+        21,
         [
           59
         ]
@@ -3688,347 +6639,357 @@
     "8": 51,
     "9": 55,
     "10": 60,
-    "11": 7
+    "11": 7,
+    "12": 55,
+    "13": 57,
+    "14": 63,
+    "15": 48,
+    "16": 60,
+    "17": 61,
+    "18": 56,
+    "19": 51,
+    "20": 55,
+    "21": 60
   },
   "word_doc_frequency": {
-    "python": 3,
-    "is": 10,
-    "a": 8,
-    "high": 1,
-    "level": 1,
-    "interpreted": 1,
-    "programming": 2,
-    "language": 3,
-    "known": 1,
-    "for": 9,
-    "its": 1,
-    "simplicity": 1,
-    "and": 11,
-    "readability": 1,
-    "it": 4,
-    "was": 1,
-    "created": 1,
-    "by": 3,
-    "guido": 1,
-    "van": 1,
-    "rossum": 1,
-    "first": 1,
-    "released": 1,
-    "in": 6,
-    "1991": 1,
-    "supports": 1,
-    "multiple": 1,
-    "paradigms": 1,
-    "including": 2,
-    "procedural": 1,
-    "object": 1,
-    "oriented": 1,
-    "functional": 1,
-    "has": 1,
-    "large": 1,
-    "standard": 2,
-    "library": 1,
-    "an": 2,
-    "active": 1,
-    "community": 1,
-    "that": 2,
-    "contributes": 1,
-    "thousands": 1,
-    "of": 6,
-    "third": 1,
-    "party": 1,
-    "packages": 1,
-    "fastapi": 1,
-    "modern": 5,
-    "fast": 1,
-    "web": 4,
-    "framework": 1,
-    "building": 3,
-    "apis": 2,
-    "with": 4,
-    "s": 1,
-    "built": 1,
-    "on": 4,
-    "top": 1,
-    "starlette": 1,
-    "pydantic": 1,
-    "providing": 1,
-    "automatic": 1,
-    "api": 2,
-    "documentation": 2,
-    "type": 1,
-    "validation": 1,
-    "async": 2,
-    "support": 2,
-    "one": 1,
-    "the": 5,
-    "fastest": 1,
-    "frameworks": 2,
-    "available": 1,
-    "comparable": 1,
-    "to": 4,
-    "node": 2,
-    "js": 2,
-    "go": 1,
-    "perfect": 1,
-    "rest": 2,
-    "microservices": 2,
-    "applications": 3,
-    "search": 1,
-    "engines": 1,
-    "use": 2,
-    "sophisticated": 1,
-    "algorithms": 2,
-    "find": 1,
-    "rank": 1,
-    "relevant": 1,
-    "documents": 1,
-    "core": 1,
-    "concepts": 3,
-    "include": 7,
-    "inverted": 1,
-    "indexes": 1,
-    "which": 1,
-    "map": 1,
-    "words": 1,
-    "ranking": 1,
-    "like": 4,
-    "tf": 1,
-    "idf": 1,
-    "bm25": 1,
-    "term": 1,
-    "frequency": 1,
-    "inverse": 1,
-    "document": 1,
-    "measures": 1,
-    "how": 1,
-    "important": 2,
-    "word": 1,
-    "collection": 1,
-    "also": 1,
-    "machine": 2,
-    "learning": 2,
-    "vector": 2,
-    "embeddings": 1,
-    "semantic": 1,
-    "capabilities": 1,
-    "databases": 2,
-    "are": 2,
-    "essential": 2,
-    "storing": 1,
-    "retrieving": 1,
-    "data": 2,
-    "sql": 1,
-    "structured": 1,
-    "query": 1,
-    "interacting": 1,
-    "relational": 1,
-    "key": 3,
-    "tables": 1,
-    "rows": 1,
-    "columns": 1,
-    "primary": 1,
-    "keys": 1,
-    "foreign": 1,
-    "relationships": 1,
-    "understanding": 4,
-    "normalization": 1,
-    "indexing": 1,
-    "optimization": 2,
-    "crucial": 2,
-    "efficient": 1,
-    "database": 1,
-    "systems": 1,
-    "subset": 1,
-    "artificial": 1,
-    "intelligence": 1,
-    "enables": 2,
-    "computers": 1,
-    "learn": 1,
-    "from": 1,
-    "without": 1,
-    "being": 1,
-    "explicitly": 1,
-    "programmed": 1,
-    "common": 1,
-    "types": 1,
-    "supervised": 1,
-    "classification": 1,
-    "regression": 1,
-    "unsupervised": 1,
-    "clustering": 1,
-    "reinforcement": 1,
-    "popular": 2,
-    "linear": 1,
-    "decision": 1,
-    "trees": 1,
-    "neural": 1,
-    "networks": 1,
-    "machines": 1,
-    "libraries": 1,
-    "scikit": 1,
-    "tensorflow": 1,
-    "pytorch": 1,
-    "make": 1,
-    "easy": 1,
-    "implement": 1,
-    "ml": 1,
-    "models": 1,
-    "representational": 1,
-    "state": 1,
-    "transfer": 1,
-    "architectural": 1,
-    "style": 1,
-    "designing": 1,
-    "services": 2,
-    "restful": 1,
-    "http": 1,
-    "methods": 1,
-    "get": 1,
-    "post": 1,
-    "put": 1,
-    "delete": 1,
-    "perform": 1,
-    "operations": 1,
-    "resources": 2,
-    "identified": 1,
-    "urls": 1,
-    "principles": 1,
-    "statelessness": 1,
-    "uniform": 1,
-    "interface": 1,
-    "resource": 1,
-    "based": 1,
-    "good": 1,
-    "design": 1,
-    "includes": 2,
-    "proper": 1,
-    "status": 1,
-    "codes": 1,
-    "error": 1,
-    "handling": 1,
-    "versioning": 1,
-    "should": 1,
-    "be": 1,
-    "intuitive": 1,
-    "consistent": 1,
-    "follow": 1,
-    "industry": 1,
-    "best": 1,
-    "practices": 1,
-    "git": 1,
-    "distributed": 1,
-    "version": 1,
-    "control": 1,
-    "system": 1,
-    "used": 1,
-    "millions": 1,
-    "developers": 1,
-    "worldwide": 1,
-    "allows": 2,
-    "tracking": 1,
-    "changes": 1,
-    "code": 1,
-    "collaborating": 1,
-    "teams": 1,
-    "managing": 2,
-    "different": 2,
-    "versions": 1,
-    "projects": 1,
-    "repositories": 1,
-    "commits": 1,
-    "branches": 1,
-    "merges": 1,
-    "remotes": 1,
-    "platforms": 1,
-    "github": 1,
-    "gitlab": 1,
-    "provide": 1,
-    "hosting": 1,
-    "collaboration": 1,
-    "features": 2,
-    "software": 1,
-    "development": 2,
-    "workflows": 1,
-    "docker": 1,
-    "platform": 2,
-    "developing": 1,
-    "shipping": 1,
-    "running": 2,
-    "containers": 1,
-    "package": 1,
-    "their": 1,
-    "dependencies": 1,
-    "ensuring": 1,
-    "consistency": 1,
-    "across": 1,
-    "environments": 1,
-    "uses": 1,
-    "images": 1,
-    "dockerfile": 1,
-    "defining": 1,
-    "image": 1,
-    "builds": 1,
-    "containerization": 1,
-    "simplifies": 1,
-    "deployment": 2,
-    "improves": 1,
-    "scalability": 2,
-    "architecture": 2,
-    "compose": 1,
-    "multi": 1,
-    "container": 1,
-    "easily": 1,
-    "javascript": 1,
-    "browsers": 1,
-    "servers": 2,
-    "via": 1,
-    "es6": 1,
-    "arrow": 1,
-    "functions": 1,
-    "promises": 1,
-    "await": 1,
-    "modules": 1,
-    "react": 1,
-    "vue": 1,
-    "angular": 1,
-    "interactive": 1,
-    "user": 1,
-    "interfaces": 1,
-    "fundamentals": 1,
-    "dom": 1,
-    "manipulation": 1,
-    "asynchronous": 1,
-    "cloud": 1,
-    "computing": 1,
-    "provides": 1,
-    "demand": 1,
-    "over": 1,
-    "internet": 1,
-    "amazon": 1,
-    "aws": 1,
-    "offers": 1,
-    "wide": 1,
-    "range": 1,
-    "ec2": 1,
-    "virtual": 1,
-    "s3": 1,
-    "storage": 1,
-    "rds": 1,
-    "lambda": 1,
-    "serverless": 1,
-    "cost": 1,
-    "application": 1,
-    "other": 1,
-    "major": 1,
-    "providers": 1,
-    "google": 1,
-    "microsoft": 1,
-    "azure": 1,
+    "python": 6,
+    "is": 20,
+    "a": 15,
+    "high": 2,
+    "level": 2,
+    "interpreted": 2,
+    "programming": 4,
+    "language": 6,
+    "known": 2,
+    "for": 18,
+    "its": 2,
+    "simplicity": 2,
+    "and": 21,
+    "readability": 2,
+    "it": 8,
+    "was": 2,
+    "created": 2,
+    "by": 6,
+    "guido": 2,
+    "van": 2,
+    "rossum": 2,
+    "first": 2,
+    "released": 2,
+    "in": 12,
+    "1991": 2,
+    "supports": 2,
+    "multiple": 2,
+    "paradigms": 2,
+    "including": 4,
+    "procedural": 2,
+    "object": 2,
+    "oriented": 2,
+    "functional": 2,
+    "has": 2,
+    "large": 2,
+    "standard": 4,
+    "library": 2,
+    "an": 4,
+    "active": 2,
+    "community": 2,
+    "that": 4,
+    "contributes": 2,
+    "thousands": 2,
+    "of": 12,
+    "third": 2,
+    "party": 2,
+    "packages": 2,
+    "fastapi": 2,
+    "modern": 10,
+    "fast": 2,
+    "web": 8,
+    "framework": 2,
+    "building": 6,
+    "apis": 4,
+    "with": 8,
+    "s": 2,
+    "built": 2,
+    "on": 8,
+    "top": 2,
+    "starlette": 2,
+    "pydantic": 2,
+    "providing": 2,
+    "automatic": 2,
+    "api": 4,
+    "documentation": 4,
+    "type": 2,
+    "validation": 2,
+    "async": 4,
+    "support": 4,
+    "one": 2,
+    "the": 10,
+    "fastest": 2,
+    "frameworks": 4,
+    "available": 2,
+    "comparable": 2,
+    "to": 8,
+    "node": 4,
+    "js": 4,
+    "go": 2,
+    "perfect": 2,
+    "rest": 4,
+    "microservices": 4,
+    "applications": 6,
+    "search": 2,
+    "engines": 2,
+    "use": 4,
+    "sophisticated": 2,
+    "algorithms": 4,
+    "find": 2,
+    "rank": 2,
+    "relevant": 2,
+    "documents": 2,
+    "core": 2,
+    "concepts": 6,
+    "include": 14,
+    "inverted": 2,
+    "indexes": 2,
+    "which": 2,
+    "map": 2,
+    "words": 2,
+    "ranking": 2,
+    "like": 8,
+    "tf": 2,
+    "idf": 2,
+    "bm25": 2,
+    "term": 2,
+    "frequency": 2,
+    "inverse": 2,
+    "document": 2,
+    "measures": 2,
+    "how": 2,
+    "important": 4,
+    "word": 2,
+    "collection": 2,
+    "also": 2,
+    "machine": 4,
+    "learning": 4,
+    "vector": 4,
+    "embeddings": 2,
+    "semantic": 2,
+    "capabilities": 2,
+    "databases": 4,
+    "are": 3,
+    "essential": 4,
+    "storing": 2,
+    "retrieving": 2,
+    "data": 4,
+    "sql": 2,
+    "structured": 2,
+    "query": 2,
+    "interacting": 2,
+    "relational": 2,
+    "key": 6,
+    "tables": 2,
+    "rows": 2,
+    "columns": 2,
+    "primary": 2,
+    "keys": 2,
+    "foreign": 2,
+    "relationships": 2,
+    "understanding": 8,
+    "normalization": 2,
+    "indexing": 2,
+    "optimization": 4,
+    "crucial": 4,
+    "efficient": 2,
+    "database": 2,
+    "systems": 2,
+    "subset": 2,
+    "artificial": 2,
+    "intelligence": 2,
+    "enables": 4,
+    "computers": 2,
+    "learn": 2,
+    "from": 2,
+    "without": 2,
+    "being": 2,
+    "explicitly": 2,
+    "programmed": 2,
+    "common": 2,
+    "types": 2,
+    "supervised": 2,
+    "classification": 2,
+    "regression": 2,
+    "unsupervised": 2,
+    "clustering": 2,
+    "reinforcement": 2,
+    "popular": 4,
+    "linear": 2,
+    "decision": 2,
+    "trees": 2,
+    "neural": 2,
+    "networks": 2,
+    "machines": 2,
+    "libraries": 2,
+    "scikit": 2,
+    "tensorflow": 2,
+    "pytorch": 2,
+    "make": 2,
+    "easy": 2,
+    "implement": 2,
+    "ml": 2,
+    "models": 2,
+    "representational": 2,
+    "state": 2,
+    "transfer": 2,
+    "architectural": 2,
+    "style": 2,
+    "designing": 2,
+    "services": 4,
+    "restful": 2,
+    "http": 2,
+    "methods": 2,
+    "get": 2,
+    "post": 2,
+    "put": 2,
+    "delete": 2,
+    "perform": 2,
+    "operations": 2,
+    "resources": 4,
+    "identified": 2,
+    "urls": 2,
+    "principles": 2,
+    "statelessness": 2,
+    "uniform": 2,
+    "interface": 2,
+    "resource": 2,
+    "based": 2,
+    "good": 2,
+    "design": 2,
+    "includes": 4,
+    "proper": 2,
+    "status": 2,
+    "codes": 2,
+    "error": 2,
+    "handling": 2,
+    "versioning": 2,
+    "should": 2,
+    "be": 2,
+    "intuitive": 2,
+    "consistent": 2,
+    "follow": 2,
+    "industry": 2,
+    "best": 2,
+    "practices": 2,
+    "git": 2,
+    "distributed": 2,
+    "version": 2,
+    "control": 2,
+    "system": 2,
+    "used": 2,
+    "millions": 2,
+    "developers": 2,
+    "worldwide": 2,
+    "allows": 4,
+    "tracking": 2,
+    "changes": 2,
+    "code": 2,
+    "collaborating": 2,
+    "teams": 2,
+    "managing": 4,
+    "different": 4,
+    "versions": 2,
+    "projects": 2,
+    "repositories": 2,
+    "commits": 2,
+    "branches": 2,
+    "merges": 2,
+    "remotes": 2,
+    "platforms": 2,
+    "github": 2,
+    "gitlab": 2,
+    "provide": 2,
+    "hosting": 2,
+    "collaboration": 2,
+    "features": 4,
+    "software": 2,
+    "development": 4,
+    "workflows": 2,
+    "docker": 2,
+    "platform": 4,
+    "developing": 2,
+    "shipping": 2,
+    "running": 4,
+    "containers": 2,
+    "package": 2,
+    "their": 2,
+    "dependencies": 2,
+    "ensuring": 2,
+    "consistency": 2,
+    "across": 2,
+    "environments": 2,
+    "uses": 2,
+    "images": 2,
+    "dockerfile": 2,
+    "defining": 2,
+    "image": 2,
+    "builds": 2,
+    "containerization": 2,
+    "simplifies": 2,
+    "deployment": 4,
+    "improves": 2,
+    "scalability": 4,
+    "architecture": 4,
+    "compose": 2,
+    "multi": 2,
+    "container": 2,
+    "easily": 2,
+    "javascript": 2,
+    "browsers": 2,
+    "servers": 4,
+    "via": 2,
+    "es6": 2,
+    "arrow": 2,
+    "functions": 2,
+    "promises": 2,
+    "await": 2,
+    "modules": 2,
+    "react": 2,
+    "vue": 2,
+    "angular": 2,
+    "interactive": 2,
+    "user": 2,
+    "interfaces": 2,
+    "fundamentals": 2,
+    "dom": 2,
+    "manipulation": 2,
+    "asynchronous": 2,
+    "cloud": 2,
+    "computing": 2,
+    "provides": 2,
+    "demand": 2,
+    "over": 2,
+    "internet": 2,
+    "amazon": 2,
+    "aws": 2,
+    "offers": 2,
+    "wide": 2,
+    "range": 2,
+    "ec2": 2,
+    "virtual": 2,
+    "s3": 2,
+    "storage": 2,
+    "rds": 2,
+    "lambda": 2,
+    "serverless": 2,
+    "cost": 2,
+    "application": 2,
+    "other": 2,
+    "major": 2,
+    "providers": 2,
+    "google": 2,
+    "microsoft": 2,
+    "azure": 2,
     "jughead": 1,
     "jones": 1,
     "betty": 1,
     "couple": 1
   },
-  "next_doc_id": 12
+  "next_doc_id": 22
 }

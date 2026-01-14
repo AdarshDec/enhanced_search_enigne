@@ -205,8 +205,13 @@ async def load_sample_documents():
         
         if stats.get("llm_available"):
             print(f"✓ LLM enabled: {stats.get('llm_provider')} ({stats.get('llm_model')})")
+        if stats.get("llm_available"):
+            print(f"✓ LLM enabled: {stats.get('llm_provider')} ({stats.get('llm_model')})")
         else:
             print("⚠ LLM not available (set OPENAI_API_KEY or run Ollama)")
+            
+        kg_entities = stats.get("knowledge_graph_entities", 0)
+        print(f"✓ Knowledge Graph active: {kg_entities} entities")
         
         print("=" * 60)
         print("Server ready! Visit http://localhost:8000")
@@ -221,5 +226,6 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
+
 
 

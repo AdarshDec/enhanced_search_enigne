@@ -1,0 +1,547 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "entity",
+      "id": "Python"
+    },
+    {
+      "type": "entity",
+      "id": "created"
+    },
+    {
+      "type": "entity",
+      "id": "Guido van Rossum"
+    },
+    {
+      "type": "entity",
+      "id": "released"
+    },
+    {
+      "type": "entity",
+      "id": "multiple"
+    },
+    {
+      "type": "entity",
+      "id": "procedural"
+    },
+    {
+      "type": "entity",
+      "id": "functional"
+    },
+    {
+      "type": "entity",
+      "id": "FastAPI"
+    },
+    {
+      "type": "entity",
+      "id": "top"
+    },
+    {
+      "type": "entity",
+      "id": "Starlette"
+    },
+    {
+      "type": "entity",
+      "id": "automatic API documentation"
+    },
+    {
+      "type": "entity",
+      "id": "Pydantic"
+    },
+    {
+      "type": "entity",
+      "id": "async support"
+    },
+    {
+      "type": "entity",
+      "id": "Node.js, Go"
+    },
+    {
+      "type": "entity",
+      "id": "Search engines"
+    },
+    {
+      "type": "entity",
+      "id": "sophisticated algorithms"
+    },
+    {
+      "type": "entity",
+      "id": "Inverted indexes"
+    },
+    {
+      "type": "entity",
+      "id": "words to documents"
+    },
+    {
+      "type": "entity",
+      "id": "TF-IDF"
+    },
+    {
+      "type": "entity",
+      "id": "important, word is to document"
+    },
+    {
+      "type": "entity",
+      "id": "Machine learning"
+    },
+    {
+      "type": "entity",
+      "id": "semantic search capabilities"
+    },
+    {
+      "type": "entity",
+      "id": "Databases"
+    },
+    {
+      "type": "entity",
+      "id": "essential"
+    },
+    {
+      "type": "entity",
+      "id": "SQL"
+    },
+    {
+      "type": "entity",
+      "id": "standard"
+    },
+    {
+      "type": "entity",
+      "id": "Key"
+    },
+    {
+      "type": "entity",
+      "id": "include"
+    },
+    {
+      "type": "entity",
+      "id": "Tables"
+    },
+    {
+      "type": "entity",
+      "id": "columns"
+    },
+    {
+      "type": "entity",
+      "id": "Primary"
+    },
+    {
+      "type": "entity",
+      "id": "foreign"
+    },
+    {
+      "type": "entity",
+      "id": "Normalization"
+    },
+    {
+      "type": "entity",
+      "id": "query"
+    },
+    {
+      "type": "entity",
+      "id": "Machine Learning"
+    },
+    {
+      "type": "entity",
+      "id": "artificial intelligence"
+    },
+    {
+      "type": "entity",
+      "id": "Common Types"
+    },
+    {
+      "type": "entity",
+      "id": "supervised learning, unsupervised learning, reinforcement learning"
+    },
+    {
+      "type": "entity",
+      "id": "Popular Algorithms"
+    },
+    {
+      "type": "entity",
+      "id": "decision trees, neural networks, support vector machines"
+    },
+    {
+      "type": "entity",
+      "id": "Python Libraries"
+    },
+    {
+      "type": "entity",
+      "id": "TensorFlow, PyTorch"
+    },
+    {
+      "type": "entity",
+      "id": "REST"
+    },
+    {
+      "type": "entity",
+      "id": "web services"
+    },
+    {
+      "type": "entity",
+      "id": "states"
+    },
+    {
+      "type": "entity",
+      "id": "resource-based URLs"
+    },
+    {
+      "type": "entity",
+      "id": "good API design"
+    },
+    {
+      "type": "entity",
+      "id": "error handling, versioning, documentation"
+    },
+    {
+      "type": "entity",
+      "id": "Git"
+    },
+    {
+      "type": "entity",
+      "id": "developers"
+    },
+    {
+      "type": "entity",
+      "id": "repositories"
+    },
+    {
+      "type": "entity",
+      "id": "branches"
+    },
+    {
+      "type": "entity",
+      "id": "Docker"
+    },
+    {
+      "type": "entity",
+      "id": "developing"
+    },
+    {
+      "type": "entity",
+      "id": "containers"
+    },
+    {
+      "type": "entity",
+      "id": "dependencies"
+    },
+    {
+      "type": "entity",
+      "id": "Dockerfile"
+    },
+    {
+      "type": "entity",
+      "id": "image builds"
+    },
+    {
+      "type": "entity",
+      "id": "containerization"
+    },
+    {
+      "type": "entity",
+      "id": "deployment"
+    },
+    {
+      "type": "entity",
+      "id": "microservices"
+    },
+    {
+      "type": "entity",
+      "id": "managing"
+    },
+    {
+      "type": "entity",
+      "id": "Docker Compose"
+    },
+    {
+      "type": "entity",
+      "id": "multi-container applications"
+    },
+    {
+      "type": "entity",
+      "id": "JavaScript"
+    },
+    {
+      "type": "entity",
+      "id": "browsers"
+    },
+    {
+      "type": "entity",
+      "id": "Modern"
+    },
+    {
+      "type": "entity",
+      "id": "ES6+"
+    },
+    {
+      "type": "entity",
+      "id": "Popular"
+    },
+    {
+      "type": "entity",
+      "id": "React, Vue, Angular"
+    },
+    {
+      "type": "entity",
+      "id": "Fundamentals"
+    },
+    {
+      "type": "entity",
+      "id": "asynchronous_programming"
+    },
+    {
+      "type": "entity",
+      "id": "AWS"
+    },
+    {
+      "type": "entity",
+      "id": "services"
+    },
+    {
+      "type": "entity",
+      "id": "cloud computing"
+    },
+    {
+      "type": "entity",
+      "id": "internet"
+    },
+    {
+      "type": "entity",
+      "id": "application deployment"
+    },
+    {
+      "type": "entity",
+      "id": "modern"
+    },
+    {
+      "type": "entity",
+      "id": "other major"
+    },
+    {
+      "type": "entity",
+      "id": "Google Cloud Platform"
+    },
+    {
+      "type": "entity",
+      "id": "Microsoft Azure"
+    },
+    {
+      "type": "entity",
+      "id": "cloud providers"
+    }
+  ],
+  "links": [
+    {
+      "relation": "was",
+      "source": "Python",
+      "target": "created"
+    },
+    {
+      "relation": "supports",
+      "source": "Python",
+      "target": "multiple"
+    },
+    {
+      "relation": "first",
+      "source": "Guido van Rossum",
+      "target": "released"
+    },
+    {
+      "relation": "object-oriented",
+      "source": "procedural",
+      "target": "functional"
+    },
+    {
+      "relation": "built",
+      "source": "FastAPI",
+      "target": "top"
+    },
+    {
+      "relation": "fast",
+      "source": "FastAPI",
+      "target": "Node.js, Go"
+    },
+    {
+      "relation": "provides",
+      "source": "Starlette",
+      "target": "automatic API documentation"
+    },
+    {
+      "relation": "type validation",
+      "source": "Pydantic",
+      "target": "async support"
+    },
+    {
+      "relation": "use",
+      "source": "Search engines",
+      "target": "sophisticated algorithms"
+    },
+    {
+      "relation": "map",
+      "source": "Inverted indexes",
+      "target": "words to documents"
+    },
+    {
+      "relation": "measures",
+      "source": "TF-IDF",
+      "target": "important, word is to document"
+    },
+    {
+      "relation": "vector embeddings",
+      "source": "Machine learning",
+      "target": "semantic search capabilities"
+    },
+    {
+      "relation": "are",
+      "source": "Databases",
+      "target": "essential"
+    },
+    {
+      "relation": "is",
+      "source": "SQL",
+      "target": "standard"
+    },
+    {
+      "relation": "concepts",
+      "source": "Key",
+      "target": "include"
+    },
+    {
+      "relation": "rows",
+      "source": "Tables",
+      "target": "columns"
+    },
+    {
+      "relation": "keys",
+      "source": "Primary",
+      "target": "foreign"
+    },
+    {
+      "relation": "indexing",
+      "source": "Normalization",
+      "target": "query"
+    },
+    {
+      "relation": "subset",
+      "source": "Machine Learning",
+      "target": "artificial intelligence"
+    },
+    {
+      "relation": "include",
+      "source": "Common Types",
+      "target": "supervised learning, unsupervised learning, reinforcement learning"
+    },
+    {
+      "relation": "linear regression",
+      "source": "Popular Algorithms",
+      "target": "decision trees, neural networks, support vector machines"
+    },
+    {
+      "relation": "scikit-learn",
+      "source": "Python Libraries",
+      "target": "TensorFlow, PyTorch"
+    },
+    {
+      "relation": "architectural style",
+      "source": "REST",
+      "target": "web services"
+    },
+    {
+      "relation": "uniform interface",
+      "source": "states",
+      "target": "resource-based URLs"
+    },
+    {
+      "relation": "proper status codes",
+      "source": "good API design",
+      "target": "error handling, versioning, documentation"
+    },
+    {
+      "relation": "used",
+      "source": "Git",
+      "target": "developers"
+    },
+    {
+      "relation": "commits",
+      "source": "repositories",
+      "target": "branches"
+    },
+    {
+      "relation": "platform",
+      "source": "Docker",
+      "target": "developing"
+    },
+    {
+      "relation": "package",
+      "source": "containers",
+      "target": "dependencies"
+    },
+    {
+      "relation": "define",
+      "source": "Dockerfile",
+      "target": "image builds"
+    },
+    {
+      "relation": "simplifies",
+      "source": "containerization",
+      "target": "deployment"
+    },
+    {
+      "relation": "architecture",
+      "source": "microservices",
+      "target": "managing"
+    },
+    {
+      "relation": "manage",
+      "source": "Docker Compose",
+      "target": "multi-container applications"
+    },
+    {
+      "relation": "running_in",
+      "source": "JavaScript",
+      "target": "browsers"
+    },
+    {
+      "relation": "includes",
+      "source": "Modern",
+      "target": "ES6+"
+    },
+    {
+      "relation": "frameworks",
+      "source": "Popular",
+      "target": "React, Vue, Angular"
+    },
+    {
+      "relation": "DOM_manipulation",
+      "source": "Fundamentals",
+      "target": "asynchronous_programming"
+    },
+    {
+      "relation": "offers",
+      "source": "AWS",
+      "target": "services"
+    },
+    {
+      "relation": "provides",
+      "source": "cloud computing",
+      "target": "internet"
+    },
+    {
+      "relation": "important",
+      "source": "application deployment",
+      "target": "modern"
+    },
+    {
+      "relation": "include",
+      "source": "other major",
+      "target": "Google Cloud Platform"
+    },
+    {
+      "relation": "major",
+      "source": "Microsoft Azure",
+      "target": "cloud providers"
+    }
+  ]
+}

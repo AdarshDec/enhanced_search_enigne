@@ -11,5 +11,7 @@ torch>=2.0.0  # Required by sentence-transformers
 # LLM integrations (optional - install as needed)
 openai>=1.0.0  # For OpenAI GPT models
 requests>=2.31.0  # For Ollama API
+networkx>=3.0
+
 
 

@@ -6,7 +6,9 @@ and question answering capabilities.
 """
 
 import os
-from typing import List, Dict, Optional
+import json
+import re
+from typing import List, Dict, Optional, Tuple
 from enum import Enum
 
 # Optional imports for LLM providers
@@ -311,5 +313,100 @@ Answer:"""
             "model": self.model_name,
             "available": self.is_available()
         }
+
+    def extract_entities(self, text: str) -> List[Tuple[str, str, str]]:
+        """
+        Extract knowledge triplets from text using LLM
+        
+        Args:
+            text: Text to process
+            
+        Returns:
+            List of (source, relation, target) triplets
+        """
+        prompt = f"""Extract knowledge triplets from the following text.
+Format each triplet as: (Subject, Relation, Object)
+- Subject and Object should be entities (people, organizations, events, concepts)
+- Relation should be a simple verb or phrase (e.g., worked_at, part_of, caused)
+- Output ONLY the triplets, one per line.
+- Do not output headers or numbering.
+
+Text:
+{text[:2000]}  # Limit text length
+
+Triplets:"""
+
+        triplets = []
+        
+        try:
+            # Generate response using appropriate provider
+            response_text = ""
+            if self.provider == LLMProvider.OPENAI:
+                # Reuse _generate_openai logic but simplified
+                result = self._generate_openai(prompt, 500, [])
+                response_text = result["answer"]
+            elif self.provider == LLMProvider.OLLAMA:
+                result = self._generate_ollama(prompt, 500, [])
+                response_text = result["answer"]
+            else:
+                # Mock response
+                return [("MockSubject", "related_to", "MockObject")]
+            
+            # Parse response
+            # Expected format: (Subject, Relation, Object)
+            for line in response_text.split('\n'):
+                line = line.strip()
+                if not line:
+                    continue
+                    
+                # Regex to match (A, B, C)
+                match = re.search(r'\(([^,]+),\s*([^,]+),\s*([^)]+)\)', line)
+                if match:
+                    s, r, t = match.groups()
+                    triplets.append((s.strip(), r.strip(), t.strip()))
+                    
+        except Exception as e:
+            print(f"⚠ Error extracting entities: {e}")
+            
+        return triplets
+
+    def extract_key_terms(self, text: str) -> List[str]:
+        """
+        Extract key entities/terms from a query
+        
+        Args:
+            text: Query text
+            
+        Returns:
+            List of key terms (e.g., ["Alice", "TechCorp"])
+        """
+        prompt = f"""Extract the main entities (people, organizations, places, concepts) from the following query.
+Output ONLY the entities, one per line. No bullets or numbering.
+
+Query: {text}
+
+Entities:"""
+
+        terms = []
+        try:
+            response_text = ""
+            if self.provider == LLMProvider.OPENAI:
+                result = self._generate_openai(prompt, 200, [])
+                response_text = result["answer"]
+            elif self.provider == LLMProvider.OLLAMA:
+                result = self._generate_ollama(prompt, 200, [])
+                response_text = result["answer"]
+            else:
+                return ["MockTerm"]
+            
+            for line in response_text.split('\n'):
+                line = line.strip()
+                if line:
+                    terms.append(line)
+        except:
+            pass
+            
+        return terms
+
 
 

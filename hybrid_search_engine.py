@@ -10,6 +10,7 @@ from dataclasses import dataclass
 from search_engine import SearchEngine
 from vector_store import VectorStore
 from llm_service import LLMService
+from knowledge_graph import KnowledgeGraph
 
 
 @dataclass
@@ -56,6 +57,7 @@ class HybridSearchEngine:
         self.keyword_search = SearchEngine()
         self.vector_store = VectorStore(model_name=vector_model)
         self.llm_service = LLMService()
+        self.knowledge_graph = KnowledgeGraph()
         
         # Normalize weights
         total = keyword_weight + semantic_weight
@@ -81,6 +83,14 @@ class HybridSearchEngine:
         # Add to vector store (if available)
         if self.vector_store.is_available():
             self.vector_store.add_document(doc_id, title, content)
+            
+        # Add to Knowledge Graph (extract entities & relations)
+        if self.llm_service.is_available():
+            print(f"Extracting knowledge from document {doc_id}...")
+            triplets = self.llm_service.extract_entities(content)
+            if triplets:
+                print(f"Found {len(triplets)} knowledge triplets")
+                self.knowledge_graph.add_triplets(triplets)
         
         self._synced_doc_ids.add(doc_id)
         return doc_id
@@ -243,10 +253,31 @@ class HybridSearchEngine:
             use_hybrid=use_hybrid
         )
         
+        # Knowledge Graph Retrieval (GraphRAG)
+        graph_context = []
+        try:
+            # Extract main entities from the question to query the graph
+            query_entities = self.llm_service.extract_key_terms(question)
+            if query_entities:
+                # Get relevant facts (subgraph)
+                facts = self.knowledge_graph.get_subgraph(query_entities)
+                if facts:
+                    print(f"Found {len(facts)} relevant facts in Knowledge Graph")
+                    graph_context = [{
+                        "title": "Knowledge Graph Facts",
+                        "content": "Known Facts:\n" + "\n".join(facts),
+                        "id": "KG"
+                    }]
+        except Exception as e:
+            print(f"⚠ Graph retrieval failed: {e}")
+        
+        # Combine contexts (Graph facts + Retrieved Docs)
+        all_context = graph_context + retrieved_docs
+
         # Generate answer using LLM
         answer_result = self.llm_service.generate_answer(
             question=question,
-            context_documents=retrieved_docs
+            context_documents=all_context
         )
         
         # Add retrieval metadata
@@ -278,7 +309,9 @@ class HybridSearchEngine:
             "llm_provider": llm_info["provider"],
             "llm_model": llm_info["model"],
             "llm_available": llm_info["available"],
-            "search_mode": "hybrid" if vector_stats["available"] else "keyword_only"
+            "llm_available": llm_info["available"],
+            "search_mode": "hybrid" if vector_stats["available"] else "keyword_only",
+            "knowledge_graph_entities": self.knowledge_graph.get_stats()["entities"]
         }
     
     def remove_document(self, doc_id: int):
@@ -296,5 +329,6 @@ class HybridSearchEngine:
         # For now, just mark as removed
         if doc_id in self._synced_doc_ids:
             self._synced_doc_ids.remove(doc_id)
+
 
 
